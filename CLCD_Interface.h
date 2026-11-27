@@ -11,7 +11,9 @@
 #include <stdint.h>
 #include <xc.h>
 
-#define _XTAL_FREQ 20000000UL
+#ifndef _XTAL_FREQ
+    #define _XTAL_FREQ 20000000UL
+#endif
 
 #define CLCD_LINE_LEN 16U
 #define CLCD_GET_ADDR_LINE0(y) (0x80 + ((y)%CLCD_LINE_LEN))

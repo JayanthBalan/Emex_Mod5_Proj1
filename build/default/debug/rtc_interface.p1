@@ -1,0 +1,1133 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"28 ./I2C_Interface.h
+[; ;./I2C_Interface.h: 28:     void i2c_init(uint32_t Fosc, uint32_t SCL_Freq);
+[v _i2c_init `(v ~T0 @X0 0 ef2`ul`ul ]
+"15 rtc_interface.c
+[; ;rtc_interface.c: 15: static uint8_t getRegisterValue(uint8_t addr, uint8_t *value);
+[v _getRegisterValue `(uc ~T0 @X0 0 sf2`uc`*uc ]
+"17
+[; ;rtc_interface.c: 17: static uint8_t setTimeRegisters(const char *time);
+[v _setTimeRegisters `(uc ~T0 @X0 0 sf1`*Cuc ]
+"16
+[; ;rtc_interface.c: 16: static uint8_t setRegisterValue(uint8_t addr, uint8_t value);
+[v _setRegisterValue `(uc ~T0 @X0 0 sf2`uc`uc ]
+"16 ./rtc_interface.h
+[; ;./rtc_interface.h: 16: typedef struct _rtc_time {
+[s S99 `uc 1 `uc 1 `uc 1 ]
+[n S99 _rtc_time seconds minutes hours ]
+"30 ./I2C_Interface.h
+[; ;./I2C_Interface.h: 30:     uint8_t i2c_start(void);
+[v _i2c_start `(uc ~T0 @X0 0 ef ]
+"34
+[; ;./I2C_Interface.h: 34:     uint8_t i2c_write(uint8_t data);
+[v _i2c_write `(uc ~T0 @X0 0 ef1`uc ]
+"32
+[; ;./I2C_Interface.h: 32:     uint8_t i2c_stop(void);
+[v _i2c_stop `(uc ~T0 @X0 0 ef ]
+"31
+[; ;./I2C_Interface.h: 31:     uint8_t i2c_restart(void);
+[v _i2c_restart `(uc ~T0 @X0 0 ef ]
+"35
+[; ;./I2C_Interface.h: 35:     uint8_t i2c_read(uint8_t *data, uint8_t ack);
+[v _i2c_read `(uc ~T0 @X0 0 ef2`*uc`uc ]
+"19 rtc_interface.c
+[; ;rtc_interface.c: 19: static uint8_t bcdToDecimal(uint8_t value);
+[v _bcdToDecimal `(uc ~T0 @X0 0 sf1`uc ]
+"40 ./I2C_Interface.h
+[; ;./I2C_Interface.h: 40:     void i2c_deinit(void);
+[v _i2c_deinit `(v ~T0 @X0 0 ef ]
+"18 rtc_interface.c
+[; ;rtc_interface.c: 18: static uint8_t parseTime(const char *time, uint8_t *hours, uint8_t *minutes, uint8_t *seconds);
+[v _parseTime `(uc ~T0 @X0 0 sf4`*Cuc`*uc`*uc`*uc ]
+"20
+[; ;rtc_interface.c: 20: static uint8_t decimalToBcd(uint8_t value);
+[v _decimalToBcd `(uc ~T0 @X0 0 sf1`uc ]
+"38 D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 38: __asm("INDF equ 00h");
+[; <" INDF equ 00h ;# ">
+"45
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 45: __asm("TMR0 equ 01h");
+[; <" TMR0 equ 01h ;# ">
+"52
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 52: __asm("PCL equ 02h");
+[; <" PCL equ 02h ;# ">
+"59
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 59: __asm("STATUS equ 03h");
+[; <" STATUS equ 03h ;# ">
+"145
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 145: __asm("FSR equ 04h");
+[; <" FSR equ 04h ;# ">
+"152
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 152: __asm("PORTA equ 05h");
+[; <" PORTA equ 05h ;# ">
+"202
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 202: __asm("PORTB equ 06h");
+[; <" PORTB equ 06h ;# ">
+"264
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 264: __asm("PORTC equ 07h");
+[; <" PORTC equ 07h ;# ">
+"326
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 326: __asm("PORTD equ 08h");
+[; <" PORTD equ 08h ;# ">
+"388
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 388: __asm("PORTE equ 09h");
+[; <" PORTE equ 09h ;# ">
+"420
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 420: __asm("PCLATH equ 0Ah");
+[; <" PCLATH equ 0Ah ;# ">
+"440
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 440: __asm("INTCON equ 0Bh");
+[; <" INTCON equ 0Bh ;# ">
+"518
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 518: __asm("PIR1 equ 0Ch");
+[; <" PIR1 equ 0Ch ;# ">
+"580
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 580: __asm("PIR2 equ 0Dh");
+[; <" PIR2 equ 0Dh ;# ">
+"620
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 620: __asm("TMR1 equ 0Eh");
+[; <" TMR1 equ 0Eh ;# ">
+"627
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 627: __asm("TMR1L equ 0Eh");
+[; <" TMR1L equ 0Eh ;# ">
+"634
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 634: __asm("TMR1H equ 0Fh");
+[; <" TMR1H equ 0Fh ;# ">
+"641
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 641: __asm("T1CON equ 010h");
+[; <" T1CON equ 010h ;# ">
+"716
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 716: __asm("TMR2 equ 011h");
+[; <" TMR2 equ 011h ;# ">
+"723
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 723: __asm("T2CON equ 012h");
+[; <" T2CON equ 012h ;# ">
+"794
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 794: __asm("SSPBUF equ 013h");
+[; <" SSPBUF equ 013h ;# ">
+"801
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 801: __asm("SSPCON equ 014h");
+[; <" SSPCON equ 014h ;# ">
+"871
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 871: __asm("CCPR1 equ 015h");
+[; <" CCPR1 equ 015h ;# ">
+"878
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 878: __asm("CCPR1L equ 015h");
+[; <" CCPR1L equ 015h ;# ">
+"885
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 885: __asm("CCPR1H equ 016h");
+[; <" CCPR1H equ 016h ;# ">
+"892
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 892: __asm("CCP1CON equ 017h");
+[; <" CCP1CON equ 017h ;# ">
+"950
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 950: __asm("RCSTA equ 018h");
+[; <" RCSTA equ 018h ;# ">
+"1045
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 1045: __asm("TXREG equ 019h");
+[; <" TXREG equ 019h ;# ">
+"1052
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 1052: __asm("RCREG equ 01Ah");
+[; <" RCREG equ 01Ah ;# ">
+"1059
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 1059: __asm("CCPR2 equ 01Bh");
+[; <" CCPR2 equ 01Bh ;# ">
+"1066
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 1066: __asm("CCPR2L equ 01Bh");
+[; <" CCPR2L equ 01Bh ;# ">
+"1073
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 1073: __asm("CCPR2H equ 01Ch");
+[; <" CCPR2H equ 01Ch ;# ">
+"1080
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 1080: __asm("CCP2CON equ 01Dh");
+[; <" CCP2CON equ 01Dh ;# ">
+"1138
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 1138: __asm("ADRESH equ 01Eh");
+[; <" ADRESH equ 01Eh ;# ">
+"1145
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 1145: __asm("ADCON0 equ 01Fh");
+[; <" ADCON0 equ 01Fh ;# ">
+"1241
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 1241: __asm("OPTION_REG equ 081h");
+[; <" OPTION_REG equ 081h ;# ">
+"1311
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 1311: __asm("TRISA equ 085h");
+[; <" TRISA equ 085h ;# ">
+"1361
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 1361: __asm("TRISB equ 086h");
+[; <" TRISB equ 086h ;# ">
+"1423
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 1423: __asm("TRISC equ 087h");
+[; <" TRISC equ 087h ;# ">
+"1485
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 1485: __asm("TRISD equ 088h");
+[; <" TRISD equ 088h ;# ">
+"1547
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 1547: __asm("TRISE equ 089h");
+[; <" TRISE equ 089h ;# ">
+"1604
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 1604: __asm("PIE1 equ 08Ch");
+[; <" PIE1 equ 08Ch ;# ">
+"1666
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 1666: __asm("PIE2 equ 08Dh");
+[; <" PIE2 equ 08Dh ;# ">
+"1706
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 1706: __asm("PCON equ 08Eh");
+[; <" PCON equ 08Eh ;# ">
+"1740
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 1740: __asm("SSPCON2 equ 091h");
+[; <" SSPCON2 equ 091h ;# ">
+"1802
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 1802: __asm("PR2 equ 092h");
+[; <" PR2 equ 092h ;# ">
+"1809
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 1809: __asm("SSPADD equ 093h");
+[; <" SSPADD equ 093h ;# ">
+"1816
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 1816: __asm("SSPSTAT equ 094h");
+[; <" SSPSTAT equ 094h ;# ">
+"1985
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 1985: __asm("TXSTA equ 098h");
+[; <" TXSTA equ 098h ;# ">
+"2066
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 2066: __asm("SPBRG equ 099h");
+[; <" SPBRG equ 099h ;# ">
+"2073
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 2073: __asm("CMCON equ 09Ch");
+[; <" CMCON equ 09Ch ;# ">
+"2143
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 2143: __asm("CVRCON equ 09Dh");
+[; <" CVRCON equ 09Dh ;# ">
+"2208
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 2208: __asm("ADRESL equ 09Eh");
+[; <" ADRESL equ 09Eh ;# ">
+"2215
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 2215: __asm("ADCON1 equ 09Fh");
+[; <" ADCON1 equ 09Fh ;# ">
+"2274
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 2274: __asm("EEDATA equ 010Ch");
+[; <" EEDATA equ 010Ch ;# ">
+"2281
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 2281: __asm("EEADR equ 010Dh");
+[; <" EEADR equ 010Dh ;# ">
+"2288
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 2288: __asm("EEDATH equ 010Eh");
+[; <" EEDATH equ 010Eh ;# ">
+"2295
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 2295: __asm("EEADRH equ 010Fh");
+[; <" EEADRH equ 010Fh ;# ">
+"2302
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 2302: __asm("EECON1 equ 018Ch");
+[; <" EECON1 equ 018Ch ;# ">
+"2347
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 2347: __asm("EECON2 equ 018Dh");
+[; <" EECON2 equ 018Dh ;# ">
+"22 rtc_interface.c
+[; ;rtc_interface.c: 22: uint8_t rtc_init(uint32_t Fosc, const char *time)
+[v _rtc_init `(uc ~T0 @X0 1 ef2`ul`*Cuc ]
+"23
+[; ;rtc_interface.c: 23: {
+{
+[e :U _rtc_init ]
+"22
+[; ;rtc_interface.c: 22: uint8_t rtc_init(uint32_t Fosc, const char *time)
+[v _Fosc `ul ~T0 @X0 1 r1 ]
+[v _time `*Cuc ~T0 @X0 1 r2 ]
+"23
+[; ;rtc_interface.c: 23: {
+[f ]
+"24
+[; ;rtc_interface.c: 24:     uint8_t marker;
+[v _marker `uc ~T0 @X0 1 a ]
+"25
+[; ;rtc_interface.c: 25:     uint8_t seconds;
+[v _seconds `uc ~T0 @X0 1 a ]
+"27
+[; ;rtc_interface.c: 27:     if(time == 0 || Fosc == 0UL)
+[e $ ! || == _time -> -> 0 `i `*Cuc == _Fosc -> 0 `ul 101  ]
+"28
+[; ;rtc_interface.c: 28:     {
+{
+"29
+[; ;rtc_interface.c: 29:         return 1U;
+[e ) -> -> 1 `ui `uc ]
+[e $UE 100  ]
+"30
+[; ;rtc_interface.c: 30:     }
+}
+[e :U 101 ]
+"32
+[; ;rtc_interface.c: 32:     i2c_init(Fosc, 100000UL);
+[e ( _i2c_init (2 , _Fosc -> 100000 `ul ]
+"34
+[; ;rtc_interface.c: 34:     if(getRegisterValue(0x08U, &marker) != 0U)
+[e $ ! != -> ( _getRegisterValue (2 , -> -> 8 `ui `uc &U _marker `ui -> 0 `ui 102  ]
+"35
+[; ;rtc_interface.c: 35:     {
+{
+"36
+[; ;rtc_interface.c: 36:         return 1U;
+[e ) -> -> 1 `ui `uc ]
+[e $UE 100  ]
+"37
+[; ;rtc_interface.c: 37:     }
+}
+[e :U 102 ]
+"39
+[; ;rtc_interface.c: 39:     if(getRegisterValue(0x00U, &seconds) != 0U)
+[e $ ! != -> ( _getRegisterValue (2 , -> -> 0 `ui `uc &U _seconds `ui -> 0 `ui 103  ]
+"40
+[; ;rtc_interface.c: 40:     {
+{
+"41
+[; ;rtc_interface.c: 41:         return 1U;
+[e ) -> -> 1 `ui `uc ]
+[e $UE 100  ]
+"42
+[; ;rtc_interface.c: 42:     }
+}
+[e :U 103 ]
+"44
+[; ;rtc_interface.c: 44:     if(marker != 0xA5U || (seconds & 0x80U) != 0U)
+[e $ ! || != -> _marker `ui -> 165 `ui != & -> _seconds `ui -> 128 `ui -> 0 `ui 104  ]
+"45
+[; ;rtc_interface.c: 45:     {
+{
+"46
+[; ;rtc_interface.c: 46:         if(setTimeRegisters(time) != 0U)
+[e $ ! != -> ( _setTimeRegisters (1 _time `ui -> 0 `ui 105  ]
+"47
+[; ;rtc_interface.c: 47:         {
+{
+"48
+[; ;rtc_interface.c: 48:             return 1U;
+[e ) -> -> 1 `ui `uc ]
+[e $UE 100  ]
+"49
+[; ;rtc_interface.c: 49:         }
+}
+[e :U 105 ]
+"51
+[; ;rtc_interface.c: 51:         if(setRegisterValue(0x08U, 0xA5U) != 0U)
+[e $ ! != -> ( _setRegisterValue (2 , -> -> 8 `ui `uc -> -> 165 `ui `uc `ui -> 0 `ui 106  ]
+"52
+[; ;rtc_interface.c: 52:         {
+{
+"53
+[; ;rtc_interface.c: 53:             return 1U;
+[e ) -> -> 1 `ui `uc ]
+[e $UE 100  ]
+"54
+[; ;rtc_interface.c: 54:         }
+}
+[e :U 106 ]
+"55
+[; ;rtc_interface.c: 55:     }
+}
+[e :U 104 ]
+"57
+[; ;rtc_interface.c: 57:     if(setRegisterValue(0x07U, 0x00U) != 0U)
+[e $ ! != -> ( _setRegisterValue (2 , -> -> 7 `ui `uc -> -> 0 `ui `uc `ui -> 0 `ui 107  ]
+"58
+[; ;rtc_interface.c: 58:     {
+{
+"59
+[; ;rtc_interface.c: 59:         return 1U;
+[e ) -> -> 1 `ui `uc ]
+[e $UE 100  ]
+"60
+[; ;rtc_interface.c: 60:     }
+}
+[e :U 107 ]
+"62
+[; ;rtc_interface.c: 62:     return 0U;
+[e ) -> -> 0 `ui `uc ]
+[e $UE 100  ]
+"63
+[; ;rtc_interface.c: 63: }
+[e :UE 100 ]
+}
+"65
+[; ;rtc_interface.c: 65: rtc_time_t rtc_gettime(void)
+[v _rtc_gettime `(S99 ~T0 @X0 1 ef ]
+"66
+[; ;rtc_interface.c: 66: {
+{
+[e :U _rtc_gettime ]
+[f ]
+[v F1059 `S99 ~T0 @X0 1 s ]
+[i F1059
+:U ..
+:U ..
+"67
+[; ;rtc_interface.c: 67:     rtc_time_t currentTime = {0};
+-> -> 0 `i `uc
+..
+..
+]
+[v _currentTime `S99 ~T0 @X0 1 a ]
+[e = _currentTime F1059 ]
+"68
+[; ;rtc_interface.c: 68:     uint8_t buffer[7];
+[v _buffer `uc ~T0 @X0 -> 7 `i a ]
+"69
+[; ;rtc_interface.c: 69:     uint8_t hour;
+[v _hour `uc ~T0 @X0 1 a ]
+"70
+[; ;rtc_interface.c: 70:     uint8_t isPM;
+[v _isPM `uc ~T0 @X0 1 a ]
+"72
+[; ;rtc_interface.c: 72:     if(i2c_start() != 0U)
+[e $ ! != -> ( _i2c_start ..  `ui -> 0 `ui 109  ]
+"73
+[; ;rtc_interface.c: 73:     {
+{
+"74
+[; ;rtc_interface.c: 74:         return currentTime;
+[e ) _currentTime ]
+[e $UE 108  ]
+"75
+[; ;rtc_interface.c: 75:     }
+}
+[e :U 109 ]
+"77
+[; ;rtc_interface.c: 77:     if(i2c_write(0x68U << 1U) != 0U)
+[e $ ! != -> ( _i2c_write (1 -> << -> 104 `ui -> 1 `ui `uc `ui -> 0 `ui 110  ]
+"78
+[; ;rtc_interface.c: 78:     {
+{
+"79
+[; ;rtc_interface.c: 79:         i2c_stop();
+[e ( _i2c_stop ..  ]
+"80
+[; ;rtc_interface.c: 80:         return currentTime;
+[e ) _currentTime ]
+[e $UE 108  ]
+"81
+[; ;rtc_interface.c: 81:     }
+}
+[e :U 110 ]
+"83
+[; ;rtc_interface.c: 83:     if(i2c_write(0x00U) != 0U)
+[e $ ! != -> ( _i2c_write (1 -> -> 0 `ui `uc `ui -> 0 `ui 111  ]
+"84
+[; ;rtc_interface.c: 84:     {
+{
+"85
+[; ;rtc_interface.c: 85:         i2c_stop();
+[e ( _i2c_stop ..  ]
+"86
+[; ;rtc_interface.c: 86:         return currentTime;
+[e ) _currentTime ]
+[e $UE 108  ]
+"87
+[; ;rtc_interface.c: 87:     }
+}
+[e :U 111 ]
+"89
+[; ;rtc_interface.c: 89:     if(i2c_restart() != 0U)
+[e $ ! != -> ( _i2c_restart ..  `ui -> 0 `ui 112  ]
+"90
+[; ;rtc_interface.c: 90:     {
+{
+"91
+[; ;rtc_interface.c: 91:         i2c_stop();
+[e ( _i2c_stop ..  ]
+"92
+[; ;rtc_interface.c: 92:         return currentTime;
+[e ) _currentTime ]
+[e $UE 108  ]
+"93
+[; ;rtc_interface.c: 93:     }
+}
+[e :U 112 ]
+"95
+[; ;rtc_interface.c: 95:     if(i2c_write((0x68U << 1U) | 0x01U) != 0U)
+[e $ ! != -> ( _i2c_write (1 -> | << -> 104 `ui -> 1 `ui -> 1 `ui `uc `ui -> 0 `ui 113  ]
+"96
+[; ;rtc_interface.c: 96:     {
+{
+"97
+[; ;rtc_interface.c: 97:         i2c_stop();
+[e ( _i2c_stop ..  ]
+"98
+[; ;rtc_interface.c: 98:         return currentTime;
+[e ) _currentTime ]
+[e $UE 108  ]
+"99
+[; ;rtc_interface.c: 99:     }
+}
+[e :U 113 ]
+"101
+[; ;rtc_interface.c: 101:     for(uint8_t iter = 0U; iter < 7U; iter++)
+{
+[v _iter `uc ~T0 @X0 1 a ]
+[e = _iter -> -> 0 `ui `uc ]
+[e $ < -> _iter `ui -> 7 `ui 114  ]
+[e $U 115  ]
+[e :U 114 ]
+"102
+[; ;rtc_interface.c: 102:     {
+{
+"103
+[; ;rtc_interface.c: 103:         if(i2c_read(&buffer[iter], (iter == 6U) ? 1U : 0U) != 0U)
+[e $ ! != -> ( _i2c_read (2 , &U *U + &U _buffer * -> _iter `ux -> -> # *U &U _buffer `ui `ux -> ? == -> _iter `ui -> 6 `ui : -> 1 `ui -> 0 `ui `uc `ui -> 0 `ui 117  ]
+"104
+[; ;rtc_interface.c: 104:         {
+{
+"105
+[; ;rtc_interface.c: 105:             i2c_stop();
+[e ( _i2c_stop ..  ]
+"106
+[; ;rtc_interface.c: 106:             return currentTime;
+[e ) _currentTime ]
+[e $UE 108  ]
+"107
+[; ;rtc_interface.c: 107:         }
+}
+[e :U 117 ]
+"108
+[; ;rtc_interface.c: 108:     }
+}
+[e ++ _iter -> -> 1 `i `uc ]
+[e $ < -> _iter `ui -> 7 `ui 114  ]
+[e :U 115 ]
+}
+"110
+[; ;rtc_interface.c: 110:     if(i2c_stop() != 0U)
+[e $ ! != -> ( _i2c_stop ..  `ui -> 0 `ui 118  ]
+"111
+[; ;rtc_interface.c: 111:     {
+{
+"112
+[; ;rtc_interface.c: 112:         return currentTime;
+[e ) _currentTime ]
+[e $UE 108  ]
+"113
+[; ;rtc_interface.c: 113:     }
+}
+[e :U 118 ]
+"115
+[; ;rtc_interface.c: 115:     currentTime.seconds = bcdToDecimal(buffer[0] & 0x7FU);
+[e = . _currentTime 0 ( _bcdToDecimal (1 -> & -> *U + &U _buffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _buffer `ui `ux `ui -> 127 `ui `uc ]
+"116
+[; ;rtc_interface.c: 116:     currentTime.minutes = bcdToDecimal(buffer[1] & 0x7FU);
+[e = . _currentTime 1 ( _bcdToDecimal (1 -> & -> *U + &U _buffer * -> -> -> 1 `i `ui `ux -> -> # *U &U _buffer `ui `ux `ui -> 127 `ui `uc ]
+"118
+[; ;rtc_interface.c: 118:     hour = buffer[2];
+[e = _hour *U + &U _buffer * -> -> -> 2 `i `ui `ux -> -> # *U &U _buffer `ui `ux ]
+"120
+[; ;rtc_interface.c: 120:     if((hour & 0x40U) != 0U)
+[e $ ! != & -> _hour `ui -> 64 `ui -> 0 `ui 119  ]
+"121
+[; ;rtc_interface.c: 121:     {
+{
+"122
+[; ;rtc_interface.c: 122:         isPM = (hour & 0x20U) ? 1U : 0U;
+[e = _isPM -> ? != & -> _hour `ui -> 32 `ui -> -> 0 `i `ui : -> 1 `ui -> 0 `ui `uc ]
+"123
+[; ;rtc_interface.c: 123:         hour = bcdToDecimal(hour & 0x1FU);
+[e = _hour ( _bcdToDecimal (1 -> & -> _hour `ui -> 31 `ui `uc ]
+"125
+[; ;rtc_interface.c: 125:         if(hour == 12U)
+[e $ ! == -> _hour `ui -> 12 `ui 120  ]
+"126
+[; ;rtc_interface.c: 126:         {
+{
+"127
+[; ;rtc_interface.c: 127:             currentTime.hours = isPM ? 12U : 0U;
+[e = . _currentTime 2 -> ? != -> _isPM `i -> 0 `i : -> 12 `ui -> 0 `ui `uc ]
+"128
+[; ;rtc_interface.c: 128:         }
+}
+[e $U 121  ]
+"129
+[; ;rtc_interface.c: 129:         else
+[e :U 120 ]
+"130
+[; ;rtc_interface.c: 130:         {
+{
+"131
+[; ;rtc_interface.c: 131:             currentTime.hours = isPM ? hour + 12U : hour;
+[e = . _currentTime 2 -> ? != -> _isPM `i -> 0 `i : + -> _hour `ui -> 12 `ui -> _hour `ui `uc ]
+"132
+[; ;rtc_interface.c: 132:         }
+}
+[e :U 121 ]
+"133
+[; ;rtc_interface.c: 133:     }
+}
+[e $U 122  ]
+"134
+[; ;rtc_interface.c: 134:     else
+[e :U 119 ]
+"135
+[; ;rtc_interface.c: 135:     {
+{
+"136
+[; ;rtc_interface.c: 136:         currentTime.hours = bcdToDecimal(hour & 0x3FU);
+[e = . _currentTime 2 ( _bcdToDecimal (1 -> & -> _hour `ui -> 63 `ui `uc ]
+"137
+[; ;rtc_interface.c: 137:     }
+}
+[e :U 122 ]
+"139
+[; ;rtc_interface.c: 139:     return currentTime;
+[e ) _currentTime ]
+[e $UE 108  ]
+"140
+[; ;rtc_interface.c: 140: }
+[e :UE 108 ]
+}
+"142
+[; ;rtc_interface.c: 142: void rtc_deinit(void) {
+[v _rtc_deinit `(v ~T0 @X0 1 ef ]
+{
+[e :U _rtc_deinit ]
+[f ]
+"143
+[; ;rtc_interface.c: 143:     i2c_deinit();
+[e ( _i2c_deinit ..  ]
+"145
+[; ;rtc_interface.c: 145:     return;
+[e $UE 123  ]
+"146
+[; ;rtc_interface.c: 146: }
+[e :UE 123 ]
+}
+"148
+[; ;rtc_interface.c: 148: static uint8_t setTimeRegisters(const char *time) {
+[v _setTimeRegisters `(uc ~T0 @X0 1 sf1`*Cuc ]
+{
+[e :U _setTimeRegisters ]
+[v _time `*Cuc ~T0 @X0 1 r1 ]
+[f ]
+"149
+[; ;rtc_interface.c: 149:     uint8_t hours;
+[v _hours `uc ~T0 @X0 1 a ]
+"150
+[; ;rtc_interface.c: 150:     uint8_t minutes;
+[v _minutes `uc ~T0 @X0 1 a ]
+"151
+[; ;rtc_interface.c: 151:     uint8_t seconds;
+[v _seconds `uc ~T0 @X0 1 a ]
+"153
+[; ;rtc_interface.c: 153:     if(parseTime(time, &hours, &minutes, &seconds) != 0U)
+[e $ ! != -> ( _parseTime (4 , , , _time &U _hours &U _minutes &U _seconds `ui -> 0 `ui 125  ]
+"154
+[; ;rtc_interface.c: 154:     {
+{
+"155
+[; ;rtc_interface.c: 155:         return 1U;
+[e ) -> -> 1 `ui `uc ]
+[e $UE 124  ]
+"156
+[; ;rtc_interface.c: 156:     }
+}
+[e :U 125 ]
+"158
+[; ;rtc_interface.c: 158:     if(i2c_start() != 0U)
+[e $ ! != -> ( _i2c_start ..  `ui -> 0 `ui 126  ]
+"159
+[; ;rtc_interface.c: 159:     {
+{
+"160
+[; ;rtc_interface.c: 160:         return 1U;
+[e ) -> -> 1 `ui `uc ]
+[e $UE 124  ]
+"161
+[; ;rtc_interface.c: 161:     }
+}
+[e :U 126 ]
+"163
+[; ;rtc_interface.c: 163:     if(i2c_write(0x68U << 1U) != 0U)
+[e $ ! != -> ( _i2c_write (1 -> << -> 104 `ui -> 1 `ui `uc `ui -> 0 `ui 127  ]
+"164
+[; ;rtc_interface.c: 164:     {
+{
+"165
+[; ;rtc_interface.c: 165:         i2c_stop();
+[e ( _i2c_stop ..  ]
+"166
+[; ;rtc_interface.c: 166:         return 1U;
+[e ) -> -> 1 `ui `uc ]
+[e $UE 124  ]
+"167
+[; ;rtc_interface.c: 167:     }
+}
+[e :U 127 ]
+"169
+[; ;rtc_interface.c: 169:     if(i2c_write(0x00U) != 0U)
+[e $ ! != -> ( _i2c_write (1 -> -> 0 `ui `uc `ui -> 0 `ui 128  ]
+"170
+[; ;rtc_interface.c: 170:     {
+{
+"171
+[; ;rtc_interface.c: 171:         i2c_stop();
+[e ( _i2c_stop ..  ]
+"172
+[; ;rtc_interface.c: 172:         return 1U;
+[e ) -> -> 1 `ui `uc ]
+[e $UE 124  ]
+"173
+[; ;rtc_interface.c: 173:     }
+}
+[e :U 128 ]
+"175
+[; ;rtc_interface.c: 175:     if(i2c_write(decimalToBcd(seconds)) != 0U)
+[e $ ! != -> ( _i2c_write (1 ( _decimalToBcd (1 _seconds `ui -> 0 `ui 129  ]
+"176
+[; ;rtc_interface.c: 176:     {
+{
+"177
+[; ;rtc_interface.c: 177:         i2c_stop();
+[e ( _i2c_stop ..  ]
+"178
+[; ;rtc_interface.c: 178:         return 1U;
+[e ) -> -> 1 `ui `uc ]
+[e $UE 124  ]
+"179
+[; ;rtc_interface.c: 179:     }
+}
+[e :U 129 ]
+"181
+[; ;rtc_interface.c: 181:     if(i2c_write(decimalToBcd(minutes)) != 0U)
+[e $ ! != -> ( _i2c_write (1 ( _decimalToBcd (1 _minutes `ui -> 0 `ui 130  ]
+"182
+[; ;rtc_interface.c: 182:     {
+{
+"183
+[; ;rtc_interface.c: 183:         i2c_stop();
+[e ( _i2c_stop ..  ]
+"184
+[; ;rtc_interface.c: 184:         return 1U;
+[e ) -> -> 1 `ui `uc ]
+[e $UE 124  ]
+"185
+[; ;rtc_interface.c: 185:     }
+}
+[e :U 130 ]
+"187
+[; ;rtc_interface.c: 187:     if(i2c_write(decimalToBcd(hours)) != 0U)
+[e $ ! != -> ( _i2c_write (1 ( _decimalToBcd (1 _hours `ui -> 0 `ui 131  ]
+"188
+[; ;rtc_interface.c: 188:     {
+{
+"189
+[; ;rtc_interface.c: 189:         i2c_stop();
+[e ( _i2c_stop ..  ]
+"190
+[; ;rtc_interface.c: 190:         return 1U;
+[e ) -> -> 1 `ui `uc ]
+[e $UE 124  ]
+"191
+[; ;rtc_interface.c: 191:     }
+}
+[e :U 131 ]
+"193
+[; ;rtc_interface.c: 193:     if(i2c_stop() != 0U)
+[e $ ! != -> ( _i2c_stop ..  `ui -> 0 `ui 132  ]
+"194
+[; ;rtc_interface.c: 194:     {
+{
+"195
+[; ;rtc_interface.c: 195:         return 1U;
+[e ) -> -> 1 `ui `uc ]
+[e $UE 124  ]
+"196
+[; ;rtc_interface.c: 196:     }
+}
+[e :U 132 ]
+"198
+[; ;rtc_interface.c: 198:     return 0U;
+[e ) -> -> 0 `ui `uc ]
+[e $UE 124  ]
+"199
+[; ;rtc_interface.c: 199: }
+[e :UE 124 ]
+}
+"201
+[; ;rtc_interface.c: 201: static uint8_t parseTime(const char *time, uint8_t *hours, uint8_t *minutes, uint8_t *seconds)
+[v _parseTime `(uc ~T0 @X0 1 sf4`*Cuc`*uc`*uc`*uc ]
+"202
+[; ;rtc_interface.c: 202: {
+{
+[e :U _parseTime ]
+"201
+[; ;rtc_interface.c: 201: static uint8_t parseTime(const char *time, uint8_t *hours, uint8_t *minutes, uint8_t *seconds)
+[v _time `*Cuc ~T0 @X0 1 r1 ]
+[v _hours `*uc ~T0 @X0 1 r2 ]
+[v _minutes `*uc ~T0 @X0 1 r3 ]
+[v _seconds `*uc ~T0 @X0 1 r4 ]
+"202
+[; ;rtc_interface.c: 202: {
+[f ]
+"203
+[; ;rtc_interface.c: 203:     if(time[2] != ':' || time[5] != ':')
+[e $ ! || != -> *U + _time * -> -> 2 `i `x -> -> # *U _time `i `x `ui -> 58 `ui != -> *U + _time * -> -> 5 `i `x -> -> # *U _time `i `x `ui -> 58 `ui 134  ]
+"204
+[; ;rtc_interface.c: 204:     {
+{
+"205
+[; ;rtc_interface.c: 205:         return 1U;
+[e ) -> -> 1 `ui `uc ]
+[e $UE 133  ]
+"206
+[; ;rtc_interface.c: 206:     }
+}
+[e :U 134 ]
+"208
+[; ;rtc_interface.c: 208:     for(uint8_t iter = 0U; iter < 8U; iter++)
+{
+[v _iter `uc ~T0 @X0 1 a ]
+[e = _iter -> -> 0 `ui `uc ]
+[e $ < -> _iter `ui -> 8 `ui 135  ]
+[e $U 136  ]
+[e :U 135 ]
+"209
+[; ;rtc_interface.c: 209:     {
+{
+"210
+[; ;rtc_interface.c: 210:         if(iter != 2U && iter != 5U && (time[iter] < '0' || time[iter] > '9'))
+[e $ ! && && != -> _iter `ui -> 2 `ui != -> _iter `ui -> 5 `ui || < -> *U + _time * -> _iter `ux -> -> # *U _time `ui `ux `ui -> 48 `ui > -> *U + _time * -> _iter `ux -> -> # *U _time `ui `ux `ui -> 57 `ui 138  ]
+"211
+[; ;rtc_interface.c: 211:         {
+{
+"212
+[; ;rtc_interface.c: 212:             return 1U;
+[e ) -> -> 1 `ui `uc ]
+[e $UE 133  ]
+"213
+[; ;rtc_interface.c: 213:         }
+}
+[e :U 138 ]
+"214
+[; ;rtc_interface.c: 214:     }
+}
+[e ++ _iter -> -> 1 `i `uc ]
+[e $ < -> _iter `ui -> 8 `ui 135  ]
+[e :U 136 ]
+}
+"216
+[; ;rtc_interface.c: 216:     *hours = ((time[0] - '0') * 10U) + (time[1] - '0');
+[e = *U _hours -> + * - -> *U + _time * -> -> 0 `i `x -> -> # *U _time `i `x `ui -> 48 `ui -> 10 `ui - -> *U + _time * -> -> 1 `i `x -> -> # *U _time `i `x `ui -> 48 `ui `uc ]
+"217
+[; ;rtc_interface.c: 217:     *minutes = ((time[3] - '0') * 10U) + (time[4] - '0');
+[e = *U _minutes -> + * - -> *U + _time * -> -> 3 `i `x -> -> # *U _time `i `x `ui -> 48 `ui -> 10 `ui - -> *U + _time * -> -> 4 `i `x -> -> # *U _time `i `x `ui -> 48 `ui `uc ]
+"218
+[; ;rtc_interface.c: 218:     *seconds = ((time[6] - '0') * 10U) + (time[7] - '0');
+[e = *U _seconds -> + * - -> *U + _time * -> -> 6 `i `x -> -> # *U _time `i `x `ui -> 48 `ui -> 10 `ui - -> *U + _time * -> -> 7 `i `x -> -> # *U _time `i `x `ui -> 48 `ui `uc ]
+"220
+[; ;rtc_interface.c: 220:     if(*hours > 23U || *minutes > 59U || *seconds > 59U)
+[e $ ! || || > -> *U _hours `ui -> 23 `ui > -> *U _minutes `ui -> 59 `ui > -> *U _seconds `ui -> 59 `ui 139  ]
+"221
+[; ;rtc_interface.c: 221:     {
+{
+"222
+[; ;rtc_interface.c: 222:         return 1U;
+[e ) -> -> 1 `ui `uc ]
+[e $UE 133  ]
+"223
+[; ;rtc_interface.c: 223:     }
+}
+[e :U 139 ]
+"225
+[; ;rtc_interface.c: 225:     return 0U;
+[e ) -> -> 0 `ui `uc ]
+[e $UE 133  ]
+"226
+[; ;rtc_interface.c: 226: }
+[e :UE 133 ]
+}
+"228
+[; ;rtc_interface.c: 228: static uint8_t getRegisterValue(uint8_t addr, uint8_t *value)
+[v _getRegisterValue `(uc ~T0 @X0 1 sf2`uc`*uc ]
+"229
+[; ;rtc_interface.c: 229: {
+{
+[e :U _getRegisterValue ]
+"228
+[; ;rtc_interface.c: 228: static uint8_t getRegisterValue(uint8_t addr, uint8_t *value)
+[v _addr `uc ~T0 @X0 1 r1 ]
+[v _value `*uc ~T0 @X0 1 r2 ]
+"229
+[; ;rtc_interface.c: 229: {
+[f ]
+"230
+[; ;rtc_interface.c: 230:     if(value == 0)
+[e $ ! == _value -> -> 0 `i `*uc 141  ]
+"231
+[; ;rtc_interface.c: 231:     {
+{
+"232
+[; ;rtc_interface.c: 232:         return 1U;
+[e ) -> -> 1 `ui `uc ]
+[e $UE 140  ]
+"233
+[; ;rtc_interface.c: 233:     }
+}
+[e :U 141 ]
+"235
+[; ;rtc_interface.c: 235:     if(i2c_start() != 0U)
+[e $ ! != -> ( _i2c_start ..  `ui -> 0 `ui 142  ]
+"236
+[; ;rtc_interface.c: 236:     {
+{
+"237
+[; ;rtc_interface.c: 237:         return 1U;
+[e ) -> -> 1 `ui `uc ]
+[e $UE 140  ]
+"238
+[; ;rtc_interface.c: 238:     }
+}
+[e :U 142 ]
+"240
+[; ;rtc_interface.c: 240:     if(i2c_write(0x68U << 1U) != 0U)
+[e $ ! != -> ( _i2c_write (1 -> << -> 104 `ui -> 1 `ui `uc `ui -> 0 `ui 143  ]
+"241
+[; ;rtc_interface.c: 241:     {
+{
+"242
+[; ;rtc_interface.c: 242:         i2c_stop();
+[e ( _i2c_stop ..  ]
+"243
+[; ;rtc_interface.c: 243:         return 1U;
+[e ) -> -> 1 `ui `uc ]
+[e $UE 140  ]
+"244
+[; ;rtc_interface.c: 244:     }
+}
+[e :U 143 ]
+"246
+[; ;rtc_interface.c: 246:     if(i2c_write(addr) != 0U)
+[e $ ! != -> ( _i2c_write (1 _addr `ui -> 0 `ui 144  ]
+"247
+[; ;rtc_interface.c: 247:     {
+{
+"248
+[; ;rtc_interface.c: 248:         i2c_stop();
+[e ( _i2c_stop ..  ]
+"249
+[; ;rtc_interface.c: 249:         return 1U;
+[e ) -> -> 1 `ui `uc ]
+[e $UE 140  ]
+"250
+[; ;rtc_interface.c: 250:     }
+}
+[e :U 144 ]
+"252
+[; ;rtc_interface.c: 252:     if(i2c_restart() != 0U)
+[e $ ! != -> ( _i2c_restart ..  `ui -> 0 `ui 145  ]
+"253
+[; ;rtc_interface.c: 253:     {
+{
+"254
+[; ;rtc_interface.c: 254:         i2c_stop();
+[e ( _i2c_stop ..  ]
+"255
+[; ;rtc_interface.c: 255:         return 1U;
+[e ) -> -> 1 `ui `uc ]
+[e $UE 140  ]
+"256
+[; ;rtc_interface.c: 256:     }
+}
+[e :U 145 ]
+"258
+[; ;rtc_interface.c: 258:     if(i2c_write((0x68U << 1U) | 0x01U) != 0U)
+[e $ ! != -> ( _i2c_write (1 -> | << -> 104 `ui -> 1 `ui -> 1 `ui `uc `ui -> 0 `ui 146  ]
+"259
+[; ;rtc_interface.c: 259:     {
+{
+"260
+[; ;rtc_interface.c: 260:         i2c_stop();
+[e ( _i2c_stop ..  ]
+"261
+[; ;rtc_interface.c: 261:         return 1U;
+[e ) -> -> 1 `ui `uc ]
+[e $UE 140  ]
+"262
+[; ;rtc_interface.c: 262:     }
+}
+[e :U 146 ]
+"264
+[; ;rtc_interface.c: 264:     if(i2c_read(value, 1U) != 0U)
+[e $ ! != -> ( _i2c_read (2 , _value -> -> 1 `ui `uc `ui -> 0 `ui 147  ]
+"265
+[; ;rtc_interface.c: 265:     {
+{
+"266
+[; ;rtc_interface.c: 266:         i2c_stop();
+[e ( _i2c_stop ..  ]
+"267
+[; ;rtc_interface.c: 267:         return 1U;
+[e ) -> -> 1 `ui `uc ]
+[e $UE 140  ]
+"268
+[; ;rtc_interface.c: 268:     }
+}
+[e :U 147 ]
+"270
+[; ;rtc_interface.c: 270:     if(i2c_stop() != 0U)
+[e $ ! != -> ( _i2c_stop ..  `ui -> 0 `ui 148  ]
+"271
+[; ;rtc_interface.c: 271:     {
+{
+"272
+[; ;rtc_interface.c: 272:         return 1U;
+[e ) -> -> 1 `ui `uc ]
+[e $UE 140  ]
+"273
+[; ;rtc_interface.c: 273:     }
+}
+[e :U 148 ]
+"275
+[; ;rtc_interface.c: 275:     return 0U;
+[e ) -> -> 0 `ui `uc ]
+[e $UE 140  ]
+"276
+[; ;rtc_interface.c: 276: }
+[e :UE 140 ]
+}
+"278
+[; ;rtc_interface.c: 278: static uint8_t setRegisterValue(uint8_t addr, uint8_t value)
+[v _setRegisterValue `(uc ~T0 @X0 1 sf2`uc`uc ]
+"279
+[; ;rtc_interface.c: 279: {
+{
+[e :U _setRegisterValue ]
+"278
+[; ;rtc_interface.c: 278: static uint8_t setRegisterValue(uint8_t addr, uint8_t value)
+[v _addr `uc ~T0 @X0 1 r1 ]
+[v _value `uc ~T0 @X0 1 r2 ]
+"279
+[; ;rtc_interface.c: 279: {
+[f ]
+"280
+[; ;rtc_interface.c: 280:     if(i2c_start() != 0U)
+[e $ ! != -> ( _i2c_start ..  `ui -> 0 `ui 150  ]
+"281
+[; ;rtc_interface.c: 281:     {
+{
+"282
+[; ;rtc_interface.c: 282:         return 1U;
+[e ) -> -> 1 `ui `uc ]
+[e $UE 149  ]
+"283
+[; ;rtc_interface.c: 283:     }
+}
+[e :U 150 ]
+"285
+[; ;rtc_interface.c: 285:     if(i2c_write(0x68U << 1U) != 0U)
+[e $ ! != -> ( _i2c_write (1 -> << -> 104 `ui -> 1 `ui `uc `ui -> 0 `ui 151  ]
+"286
+[; ;rtc_interface.c: 286:     {
+{
+"287
+[; ;rtc_interface.c: 287:         i2c_stop();
+[e ( _i2c_stop ..  ]
+"288
+[; ;rtc_interface.c: 288:         return 1U;
+[e ) -> -> 1 `ui `uc ]
+[e $UE 149  ]
+"289
+[; ;rtc_interface.c: 289:     }
+}
+[e :U 151 ]
+"291
+[; ;rtc_interface.c: 291:     if(i2c_write(addr) != 0U)
+[e $ ! != -> ( _i2c_write (1 _addr `ui -> 0 `ui 152  ]
+"292
+[; ;rtc_interface.c: 292:     {
+{
+"293
+[; ;rtc_interface.c: 293:         i2c_stop();
+[e ( _i2c_stop ..  ]
+"294
+[; ;rtc_interface.c: 294:         return 1U;
+[e ) -> -> 1 `ui `uc ]
+[e $UE 149  ]
+"295
+[; ;rtc_interface.c: 295:     }
+}
+[e :U 152 ]
+"297
+[; ;rtc_interface.c: 297:     if(i2c_write(value) != 0U)
+[e $ ! != -> ( _i2c_write (1 _value `ui -> 0 `ui 153  ]
+"298
+[; ;rtc_interface.c: 298:     {
+{
+"299
+[; ;rtc_interface.c: 299:         i2c_stop();
+[e ( _i2c_stop ..  ]
+"300
+[; ;rtc_interface.c: 300:         return 1U;
+[e ) -> -> 1 `ui `uc ]
+[e $UE 149  ]
+"301
+[; ;rtc_interface.c: 301:     }
+}
+[e :U 153 ]
+"303
+[; ;rtc_interface.c: 303:     if(i2c_stop() != 0U)
+[e $ ! != -> ( _i2c_stop ..  `ui -> 0 `ui 154  ]
+"304
+[; ;rtc_interface.c: 304:     {
+{
+"305
+[; ;rtc_interface.c: 305:         return 1U;
+[e ) -> -> 1 `ui `uc ]
+[e $UE 149  ]
+"306
+[; ;rtc_interface.c: 306:     }
+}
+[e :U 154 ]
+"308
+[; ;rtc_interface.c: 308:     return 0U;
+[e ) -> -> 0 `ui `uc ]
+[e $UE 149  ]
+"309
+[; ;rtc_interface.c: 309: }
+[e :UE 149 ]
+}
+"311
+[; ;rtc_interface.c: 311: static uint8_t bcdToDecimal(uint8_t value)
+[v _bcdToDecimal `(uc ~T0 @X0 1 sf1`uc ]
+"312
+[; ;rtc_interface.c: 312: {
+{
+[e :U _bcdToDecimal ]
+"311
+[; ;rtc_interface.c: 311: static uint8_t bcdToDecimal(uint8_t value)
+[v _value `uc ~T0 @X0 1 r1 ]
+"312
+[; ;rtc_interface.c: 312: {
+[f ]
+"313
+[; ;rtc_interface.c: 313:     return ((value >> 4U) * 10U) + (value & 0x0FU);
+[e ) -> + * -> >> -> _value `i -> 4 `ui `ui -> 10 `ui & -> _value `ui -> 15 `ui `uc ]
+[e $UE 155  ]
+"314
+[; ;rtc_interface.c: 314: }
+[e :UE 155 ]
+}
+"316
+[; ;rtc_interface.c: 316: static uint8_t decimalToBcd(uint8_t value)
+[v _decimalToBcd `(uc ~T0 @X0 1 sf1`uc ]
+"317
+[; ;rtc_interface.c: 317: {
+{
+[e :U _decimalToBcd ]
+"316
+[; ;rtc_interface.c: 316: static uint8_t decimalToBcd(uint8_t value)
+[v _value `uc ~T0 @X0 1 r1 ]
+"317
+[; ;rtc_interface.c: 317: {
+[f ]
+"318
+[; ;rtc_interface.c: 318:     return (uint8_t)((value / 10U) << 4U) | (value % 10U);
+[e ) -> | -> -> << / -> _value `ui -> 10 `ui -> 4 `ui `uc `ui % -> _value `ui -> 10 `ui `uc ]
+[e $UE 156  ]
+"319
+[; ;rtc_interface.c: 319: }
+[e :UE 156 ]
+}

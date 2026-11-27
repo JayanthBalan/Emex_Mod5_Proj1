@@ -67,7 +67,7 @@ void nonBlockDelayT0_init_rapid(uint8_t load_tmr0, uint8_t activate_prescaler, u
     INTCONbits.PEIE = 1U;
     INTCONbits.GIE = 1U;
     
-    durationTick_rapid = getDurationTick(delay_time_us, Fosc);
+    durationTick_rapid = getDurationTick_TM0(delay_time_us, Fosc);
     durationTick_rapid = (durationTick_rapid == 0) ? 1 : durationTick_rapid;
     delay_begin_flag_rapid = UINT8_C(0);
     return;
@@ -151,7 +151,7 @@ uint8_t TMR0_ISR_rapid_periodic(void) {
 
 uint8_t timerT0_expired(uint32_t durationTick, uint32_t startTick) {
     uint8_t status = 0;
-    if((getSysTick() - startTick) >= durationTick) {
+    if((getSysTick_TM0() - startTick) >= durationTick) {
         status = UINT8_C(1);
     }
     return status;

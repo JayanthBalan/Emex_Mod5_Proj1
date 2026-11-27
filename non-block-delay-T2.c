@@ -71,7 +71,7 @@ void nonBlockDelayT2_init_rapid(uint8_t load_pr2, uint8_t activate_scaler, uint8
     INTCONbits.GIE = 1U;
     T2CONbits.TMR2ON = 1U;
 
-    durationTick_rapid = getDurationTick(delay_time_us, Fosc);
+    durationTick_rapid = getDurationTick_TM2(delay_time_us, Fosc);
     durationTick_rapid = (durationTick_rapid == 0U) ? 1U : durationTick_rapid;
     return;
 }
@@ -162,7 +162,7 @@ uint8_t TMR2_ISR_rapid_periodic(void) {
 
 uint8_t timerT2_expired(uint32_t durationTick, uint32_t startTick) {
     uint8_t status = 0U;
-    if((getSysTick() - startTick) >= durationTick) {
+    if((getSysTick_TM2() - startTick) >= durationTick) {
         status = UINT8_C(1);
     }
     return status;

@@ -66,7 +66,7 @@ void CLCD_deinit(void) {
 }
 
 void displayOptionsCLCD(uint8_t disp, uint8_t cursor, uint8_t blink) {
-    writeCLCD((uint8_t)(0x08U | blink | (cursor << 1U) | (disp << 2U)), CLCD_INST_MODE);
+    writeCLCD((uint8_t)(0x08U | blink | (uint8_t)(cursor << 1U) | (uint8_t)(disp << 2U)), CLCD_INST_MODE);
 
     return;
 }

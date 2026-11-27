@@ -1,0 +1,615 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"17 D:\_Programming\Firmware\Emex-Project\CarBlackBox\CLCD_Interface.c
+[v _writeCLCD writeCLCD `(v  1 e 1 0 ]
+"49
+[v _writeStringCLCD writeStringCLCD `(v  1 e 1 0 ]
+"68
+[v _displayOptionsCLCD displayOptionsCLCD `(v  1 e 1 0 ]
+"74
+[v _CLCD_init CLCD_init `(v  1 e 1 0 ]
+"5 D:\MPLABX\pic\sources\c99\common\__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"5 D:\MPLABX\pic\sources\c99\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"5 D:\MPLABX\pic\sources\c99\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"10 D:\MPLABX\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"15 D:\MPLABX\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"4 D:\MPLABX\pic\sources\c99\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+"4 D:\MPLABX\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 D:\MPLABX\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"6 D:\_Programming\Firmware\Emex-Project\CarBlackBox\I2c_Interface.c
+[v _i2c_wait_idle i2c_wait_idle `(uc  1 s 1 i2c_wait_idle ]
+"19
+[v _i2c_init i2c_init `(v  1 e 1 0 ]
+"54
+[v _i2c_start i2c_start `(uc  1 e 1 0 ]
+"66
+[v _i2c_restart i2c_restart `(uc  1 e 1 0 ]
+"78
+[v _i2c_stop i2c_stop `(uc  1 e 1 0 ]
+"90
+[v _i2c_write i2c_write `(uc  1 e 1 0 ]
+"110
+[v _i2c_read i2c_read `(uc  1 e 1 0 ]
+"216
+[v _i2c_deinit i2c_deinit `(v  1 e 1 0 ]
+"49 D:\_Programming\Firmware\Emex-Project\CarBlackBox\Keypad_Scanner.c
+[v _scanKeys_raw scanKeys_raw `(us  1 s 2 scanKeys_raw ]
+"97
+[v _debounceKeys debounceKeys `(us  1 s 2 debounceKeys ]
+"155
+[v _scanKeys_edge scanKeys_edge `(us  1 s 2 scanKeys_edge ]
+"164
+[v _scanKeys_level scanKeys_level `(us  1 s 2 scanKeys_level ]
+"25 D:\_Programming\Firmware\Emex-Project\CarBlackBox\Main.c
+[v _main main `(v  1 e 1 0 ]
+"44
+[v _timeToString timeToString `(v  1 s 1 timeToString ]
+"23 D:\_Programming\Firmware\Emex-Project\CarBlackBox\non-block-delay-T0.c
+[v _prescalerCalculate prescalerCalculate `T(ul  1 s 4 prescalerCalculate ]
+"88
+[v _getSysTick_TM0 getSysTick_TM0 `(ul  1 e 4 0 ]
+"109
+[v _getDurationTick_TM0 getDurationTick_TM0 `(ul  1 e 4 0 ]
+"24 D:\_Programming\Firmware\Emex-Project\CarBlackBox\non-block-delay-T2.c
+[v _prescalerCalculate$F784 prescalerCalculate `T(ul  1 s 4 prescalerCalculate ]
+"28
+[v _postscalerCalculate postscalerCalculate `T(ul  1 s 4 postscalerCalculate ]
+"91
+[v _getSysTick_TM2 getSysTick_TM2 `(ul  1 e 4 0 ]
+"124
+[v _getDurationTick_TM2 getDurationTick_TM2 `(ul  1 e 4 0 ]
+"22 D:\_Programming\Firmware\Emex-Project\CarBlackBox\rtc_interface.c
+[v _rtc_init rtc_init `(uc  1 e 1 0 ]
+"16 D:\_Programming\Firmware\Emex-Project\CarBlackBox/rtc_interface.h
+[s S37 _rtc_time 3 `uc 1 seconds 1 0 `uc 1 minutes 1 1 `uc 1 hours 1 2 ]
+"65 D:\_Programming\Firmware\Emex-Project\CarBlackBox\rtc_interface.c
+[v _rtc_gettime rtc_gettime `(S37  1 e 3 0 ]
+"148
+[v _setTimeRegisters setTimeRegisters `(uc  1 s 1 setTimeRegisters ]
+"201
+[v _parseTime parseTime `(uc  1 s 1 parseTime ]
+"228
+[v _getRegisterValue getRegisterValue `(uc  1 s 1 getRegisterValue ]
+"278
+[v _setRegisterValue setRegisterValue `(uc  1 s 1 setRegisterValue ]
+"311
+[v _bcdToDecimal bcdToDecimal `(uc  1 s 1 bcdToDecimal ]
+"316
+[v _decimalToBcd decimalToBcd `(uc  1 s 1 decimalToBcd ]
+"43 D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h
+[v _TMR0 TMR0 `VEuc  1 e 1 @1 ]
+"200
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+"324
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+[s S188 . 1 `uc 1 RE0 1 0 :1:0 
+`uc 1 RE1 1 0 :1:1 
+`uc 1 RE2 1 0 :1:2 
+]
+"398
+[u S192 . 1 `S188 1 . 1 0 ]
+[v _PORTEbits PORTEbits `VES192  1 e 1 @9 ]
+[s S600 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"461
+[s S609 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 T0IE 1 0 :1:5 
+]
+[u S614 . 1 `S600 1 . 1 0 `S609 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES614  1 e 1 @11 ]
+[s S396 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 PSPIF 1 0 :1:7 
+]
+"533
+[u S405 . 1 `S396 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES405  1 e 1 @12 ]
+"714
+[v _TMR2 TMR2 `VEuc  1 e 1 @17 ]
+[s S698 . 1 `uc 1 T2CKPS 1 0 :2:0 
+`uc 1 TMR2ON 1 0 :1:2 
+`uc 1 TOUTPS 1 0 :4:3 
+]
+"742
+[s S702 . 1 `uc 1 T2CKPS0 1 0 :1:0 
+`uc 1 T2CKPS1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 TOUTPS0 1 0 :1:3 
+`uc 1 TOUTPS1 1 0 :1:4 
+`uc 1 TOUTPS2 1 0 :1:5 
+`uc 1 TOUTPS3 1 0 :1:6 
+]
+[u S710 . 1 `S698 1 . 1 0 `S702 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES710  1 e 1 @18 ]
+"792
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @19 ]
+"799
+[v _SSPCON SSPCON `VEuc  1 e 1 @20 ]
+[s S325 . 1 `uc 1 SSPM 1 0 :4:0 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+"819
+[s S331 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+]
+[u S336 . 1 `S325 1 . 1 0 `S331 1 . 1 0 ]
+[v _SSPCONbits SSPCONbits `VES336  1 e 1 @20 ]
+"1136
+[v _ADRESH ADRESH `VEuc  1 e 1 @30 ]
+"1143
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @31 ]
+[s S116 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 GO_nDONE 1 0 :1:2 
+`uc 1 CHS 1 0 :3:3 
+`uc 1 ADCS 1 0 :2:6 
+]
+"1174
+[s S122 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 GO 1 0 :1:2 
+`uc 1 CHS0 1 0 :1:3 
+`uc 1 CHS1 1 0 :1:4 
+`uc 1 CHS2 1 0 :1:5 
+`uc 1 ADCS0 1 0 :1:6 
+`uc 1 ADCS1 1 0 :1:7 
+]
+[s S130 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nDONE 1 0 :1:2 
+]
+[s S133 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 GO_DONE 1 0 :1:2 
+]
+[u S136 . 1 `S116 1 . 1 0 `S122 1 . 1 0 `S130 1 . 1 0 `S133 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES136  1 e 1 @31 ]
+[s S573 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nRBPU 1 0 :1:7 
+]
+"1259
+[s S580 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+]
+[u S584 . 1 `S573 1 . 1 0 `S580 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES584  1 e 1 @129 ]
+"1359
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+[s S351 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"1438
+[u S360 . 1 `S351 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES360  1 e 1 @135 ]
+"1483
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+[s S372 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSPIE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+`uc 1 PSPIE 1 0 :1:7 
+]
+"1619
+[u S381 . 1 `S372 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES381  1 e 1 @140 ]
+"1738
+[v _SSPCON2 SSPCON2 `VEuc  1 e 1 @145 ]
+[s S417 . 1 `uc 1 SEN 1 0 :1:0 
+`uc 1 RSEN 1 0 :1:1 
+`uc 1 PEN 1 0 :1:2 
+`uc 1 RCEN 1 0 :1:3 
+`uc 1 ACKEN 1 0 :1:4 
+`uc 1 ACKDT 1 0 :1:5 
+`uc 1 ACKSTAT 1 0 :1:6 
+`uc 1 GCEN 1 0 :1:7 
+]
+"1755
+[u S426 . 1 `S417 1 . 1 0 ]
+[v _SSPCON2bits SSPCON2bits `VES426  1 e 1 @145 ]
+"1800
+[v _PR2 PR2 `VEuc  1 e 1 @146 ]
+"1807
+[v _SSPADD SSPADD `VEuc  1 e 1 @147 ]
+"1814
+[v _SSPSTAT SSPSTAT `VEuc  1 e 1 @148 ]
+[s S236 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+"1868
+[s S245 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D 1 0 :1:5 
+]
+[s S250 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 I2C_READ 1 0 :1:2 
+`uc 1 I2C_START 1 0 :1:3 
+`uc 1 I2C_STOP 1 0 :1:4 
+`uc 1 I2C_DATA 1 0 :1:5 
+]
+[s S256 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA 1 0 :1:5 
+]
+[s S261 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS 1 0 :1:5 
+]
+[s S266 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A 1 0 :1:5 
+]
+[s S271 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 DATA_ADDRESS 1 0 :1:5 
+]
+[u S276 . 1 `S236 1 . 1 0 `S245 1 . 1 0 `S250 1 . 1 0 `S256 1 . 1 0 `S261 1 . 1 0 `S266 1 . 1 0 `S271 1 . 1 0 ]
+[v _SSPSTATbits SSPSTATbits `VES276  1 e 1 @148 ]
+"2206
+[v _ADRESL ADRESL `VEuc  1 e 1 @158 ]
+"2213
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @159 ]
+[s S92 . 1 `uc 1 PCFG 1 0 :4:0 
+`uc 1 . 1 0 :2:4 
+`uc 1 ADCS2 1 0 :1:6 
+`uc 1 ADFM 1 0 :1:7 
+]
+"2232
+[s S97 . 1 `uc 1 PCFG0 1 0 :1:0 
+`uc 1 PCFG1 1 0 :1:1 
+`uc 1 PCFG2 1 0 :1:2 
+`uc 1 PCFG3 1 0 :1:3 
+]
+[u S102 . 1 `S92 1 . 1 0 `S97 1 . 1 0 ]
+[v _ADCON1bits ADCON1bits `VES102  1 e 1 @159 ]
+"2869
+[v _TMR0IF TMR0IF `VEb  1 e 0 @90 ]
+"2998
+[v _TRISE1 TRISE1 `VEb  1 e 0 @1097 ]
+"3001
+[v _TRISE2 TRISE2 `VEb  1 e 0 @1098 ]
+"24 D:\_Programming\Firmware\Emex-Project\CarBlackBox\Keypad_Scanner.c
+[v _enabled_keys enabled_keys `us  1 s 2 enabled_keys ]
+"25
+[v _keys_pressed keys_pressed `us  1 s 2 keys_pressed ]
+"26
+[v _candidate_keys candidate_keys `us  1 s 2 candidate_keys ]
+"27
+[v _stable_keys stable_keys `us  1 s 2 stable_keys ]
+"29
+[v _delay_ms delay_ms `uc  1 s 1 delay_ms ]
+"16 D:\_Programming\Firmware\Emex-Project\CarBlackBox\non-block-delay-T0.c
+[v _tmr0_val tmr0_val `uc  1 s 1 tmr0_val ]
+"17
+[v _prescaler_val prescaler_val `uc  1 s 1 prescaler_val ]
+"18
+[v _systick_TMR0 systick_TMR0 `VEul  1 s 4 systick_TMR0 ]
+"19
+[v _durationTick_rapid durationTick_rapid `ul  1 s 4 durationTick_rapid ]
+"20
+[v _startTick_rapid startTick_rapid `VEul  1 s 4 startTick_rapid ]
+"21
+[v _delay_begin_flag_rapid delay_begin_flag_rapid `VEuc  1 s 1 delay_begin_flag_rapid ]
+"16 D:\_Programming\Firmware\Emex-Project\CarBlackBox\non-block-delay-T2.c
+[v _pr2_val pr2_val `uc  1 s 1 pr2_val ]
+"17
+[v _prescaler_val$F777 prescaler_val `uc  1 s 1 prescaler_val ]
+"18
+[v _postscaler_val postscaler_val `uc  1 s 1 postscaler_val ]
+"19
+[v _systick_TMR2 systick_TMR2 `VEul  1 s 4 systick_TMR2 ]
+"20
+[v _durationTick_rapid$F780 durationTick_rapid `ul  1 s 4 durationTick_rapid ]
+"21
+[v _startTick_rapid$F781 startTick_rapid `VEul  1 s 4 startTick_rapid ]
+"22
+[v _delay_begin_flag_rapid$F782 delay_begin_flag_rapid `VEuc  1 s 1 delay_begin_flag_rapid ]
+"25 D:\_Programming\Firmware\Emex-Project\CarBlackBox\Main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"31
+[v main@line2 line2 `[16]uc  1 a 16 46 ]
+"30
+[v main@line1 line1 `[16]uc  1 a 16 30 ]
+[s S37 _rtc_time 3 `uc 1 seconds 1 0 `uc 1 minutes 1 1 `uc 1 hours 1 2 ]
+"29
+[v main@curr curr `S37  1 a 3 62 ]
+[v main@F1134 F1134 `[16]uc  1 s 16 F1134 ]
+"42
+} 0
+"49 D:\_Programming\Firmware\Emex-Project\CarBlackBox\CLCD_Interface.c
+[v _writeStringCLCD writeStringCLCD `(v  1 e 1 0 ]
+{
+"53
+[v writeStringCLCD@sel sel `*.4DCuc  1 a 1 6 ]
+"52
+[v writeStringCLCD@iter iter `uc  1 a 1 5 ]
+"49
+[v writeStringCLCD@string string `*.4DCuc  1 p 1 3 ]
+[v writeStringCLCD@start_Addr start_Addr `uc  1 p 1 4 ]
+"58
+} 0
+"44 D:\_Programming\Firmware\Emex-Project\CarBlackBox\Main.c
+[v _timeToString timeToString `(v  1 s 1 timeToString ]
+{
+"45
+[v timeToString@iter iter `uc  1 a 1 10 ]
+[s S37 _rtc_time 3 `uc 1 seconds 1 0 `uc 1 minutes 1 1 `uc 1 hours 1 2 ]
+"44
+[v timeToString@time time `*.39S37  1 p 2 7 ]
+[v timeToString@str_begloc str_begloc `*.4uc  1 p 1 9 ]
+"66
+} 0
+"22 D:\_Programming\Firmware\Emex-Project\CarBlackBox\rtc_interface.c
+[v _rtc_init rtc_init `(uc  1 e 1 0 ]
+{
+"25
+[v rtc_init@seconds seconds `uc  1 a 1 22 ]
+"24
+[v rtc_init@marker marker `uc  1 a 1 21 ]
+"22
+[v rtc_init@Fosc Fosc `ul  1 p 4 16 ]
+[v rtc_init@time time `*.24DCuc  1 p 1 20 ]
+"63
+} 0
+"148
+[v _setTimeRegisters setTimeRegisters `(uc  1 s 1 setTimeRegisters ]
+{
+"151
+[v setTimeRegisters@seconds seconds `uc  1 a 1 5 ]
+"150
+[v setTimeRegisters@minutes minutes `uc  1 a 1 4 ]
+"149
+[v setTimeRegisters@hours hours `uc  1 a 1 3 ]
+"148
+[v setTimeRegisters@time time `*.24DCuc  1 p 1 2 ]
+"199
+} 0
+"201
+[v _parseTime parseTime `(uc  1 s 1 parseTime ]
+{
+"208
+[v parseTime@iter iter `uc  1 a 1 9 ]
+"201
+[v parseTime@time time `*.24DCuc  1 p 1 3 ]
+[v parseTime@hours hours `*.4uc  1 p 1 4 ]
+[v parseTime@minutes minutes `*.4uc  1 p 1 5 ]
+[v parseTime@seconds seconds `*.4uc  1 p 1 6 ]
+"226
+} 0
+"316
+[v _decimalToBcd decimalToBcd `(uc  1 s 1 decimalToBcd ]
+{
+[v decimalToBcd@value value `uc  1 p 1 wreg ]
+[v decimalToBcd@value value `uc  1 p 1 wreg ]
+"318
+[v decimalToBcd@value value `uc  1 p 1 0 ]
+"319
+} 1
+"5 D:\MPLABX\pic\sources\c99\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwmod@counter counter `uc  1 a 1 4 ]
+"5
+[v ___lwmod@divisor divisor `ui  1 p 2 0 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 2 ]
+"25
+} 0
+"5 D:\MPLABX\pic\sources\c99\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 4 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 6 ]
+"5
+[v ___lwdiv@divisor divisor `ui  1 p 2 0 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 2 ]
+"30
+} 0
+"278 D:\_Programming\Firmware\Emex-Project\CarBlackBox\rtc_interface.c
+[v _setRegisterValue setRegisterValue `(uc  1 s 1 setRegisterValue ]
+{
+[v setRegisterValue@addr addr `uc  1 p 1 wreg ]
+[v setRegisterValue@addr addr `uc  1 p 1 wreg ]
+[v setRegisterValue@value value `uc  1 p 1 2 ]
+"280
+[v setRegisterValue@addr addr `uc  1 p 1 3 ]
+"309
+} 1
+"19 D:\_Programming\Firmware\Emex-Project\CarBlackBox\I2c_Interface.c
+[v _i2c_init i2c_init `(v  1 e 1 0 ]
+{
+"21
+[v i2c_init@divider divider `ul  1 a 4 12 ]
+"19
+[v i2c_init@Fosc Fosc `ul  1 p 4 0 ]
+[v i2c_init@SCL_Freq SCL_Freq `ul  1 p 4 4 ]
+"52
+} 0
+"5 D:\MPLABX\pic\sources\c99\common\__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+{
+"10
+[v ___lldiv@quotient quotient `ul  1 a 4 9 ]
+"11
+[v ___lldiv@counter counter `uc  1 a 1 13 ]
+"5
+[v ___lldiv@divisor divisor `ul  1 p 4 0 ]
+[v ___lldiv@dividend dividend `ul  1 p 4 4 ]
+"30
+} 0
+"228 D:\_Programming\Firmware\Emex-Project\CarBlackBox\rtc_interface.c
+[v _getRegisterValue getRegisterValue `(uc  1 s 1 getRegisterValue ]
+{
+[v getRegisterValue@addr addr `uc  1 p 1 wreg ]
+[v getRegisterValue@addr addr `uc  1 p 1 wreg ]
+[v getRegisterValue@value value `*.4uc  1 p 1 4 ]
+"230
+[v getRegisterValue@addr addr `uc  1 p 1 5 ]
+"276
+} 1
+"16 D:\_Programming\Firmware\Emex-Project\CarBlackBox/rtc_interface.h
+[s S37 _rtc_time 3 `uc 1 seconds 1 0 `uc 1 minutes 1 1 `uc 1 hours 1 2 ]
+"65 D:\_Programming\Firmware\Emex-Project\CarBlackBox\rtc_interface.c
+[v _rtc_gettime rtc_gettime `(S37  1 e 3 0 ]
+{
+"101
+[v rtc_gettime@iter iter `uc  1 a 1 21 ]
+"68
+[v rtc_gettime@buffer buffer `[7]uc  1 a 7 9 ]
+"67
+[v rtc_gettime@currentTime currentTime `S37  1 a 3 23 ]
+"69
+[v rtc_gettime@hour hour `uc  1 a 1 22 ]
+"70
+[v rtc_gettime@isPM isPM `uc  1 a 1 20 ]
+"66
+[v rtc_gettime@F1059 F1059 `S37  1 s 3 F1059 ]
+"140
+} 0
+"90 D:\_Programming\Firmware\Emex-Project\CarBlackBox\I2c_Interface.c
+[v _i2c_write i2c_write `(uc  1 e 1 0 ]
+{
+[v i2c_write@data data `uc  1 p 1 wreg ]
+[v i2c_write@data data `uc  1 p 1 wreg ]
+"92
+[v i2c_write@data data `uc  1 p 1 1 ]
+"108
+} 1
+"78
+[v _i2c_stop i2c_stop `(uc  1 e 1 0 ]
+{
+"88
+} 0
+"54
+[v _i2c_start i2c_start `(uc  1 e 1 0 ]
+{
+"64
+} 0
+"66
+[v _i2c_restart i2c_restart `(uc  1 e 1 0 ]
+{
+"76
+} 0
+"110
+[v _i2c_read i2c_read `(uc  1 e 1 0 ]
+{
+"112
+[v i2c_read@timeout timeout `ul  1 a 4 0 ]
+"110
+[v i2c_read@data data `*.4uc  1 p 1 8 ]
+[v i2c_read@ack ack `uc  1 p 1 9 ]
+"146
+} 0
+"6
+[v _i2c_wait_idle i2c_wait_idle `(uc  1 s 1 i2c_wait_idle ]
+{
+"8
+[v i2c_wait_idle@timeout timeout `ul  1 a 4 4 ]
+"17
+} 0
+"311 D:\_Programming\Firmware\Emex-Project\CarBlackBox\rtc_interface.c
+[v _bcdToDecimal bcdToDecimal `(uc  1 s 1 bcdToDecimal ]
+{
+[v bcdToDecimal@value value `uc  1 p 1 wreg ]
+[v bcdToDecimal@value value `uc  1 p 1 wreg ]
+"313
+[v bcdToDecimal@value value `uc  1 p 1 5 ]
+"314
+} 1
+"4 D:\MPLABX\pic\sources\c99\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+{
+[v ___bmul@multiplier multiplier `uc  1 p 1 wreg ]
+"6
+[v ___bmul@product product `uc  1 a 1 1 ]
+"4
+[v ___bmul@multiplier multiplier `uc  1 p 1 wreg ]
+[v ___bmul@multiplicand multiplicand `uc  1 p 1 0 ]
+"6
+[v ___bmul@multiplier multiplier `uc  1 p 1 2 ]
+"51
+} 1
+"74 D:\_Programming\Firmware\Emex-Project\CarBlackBox\CLCD_Interface.c
+[v _CLCD_init CLCD_init `(v  1 e 1 0 ]
+{
+[v CLCD_init@cursorID cursorID `uc  1 p 1 8 ]
+[v CLCD_init@disp disp `uc  1 p 1 9 ]
+[v CLCD_init@cursor cursor `uc  1 p 1 10 ]
+[v CLCD_init@blink blink `uc  1 p 1 11 ]
+"106
+} 1
+"68
+[v _displayOptionsCLCD displayOptionsCLCD `(v  1 e 1 0 ]
+{
+[v displayOptionsCLCD@disp disp `uc  1 p 1 wreg ]
+[v displayOptionsCLCD@disp disp `uc  1 p 1 wreg ]
+[v displayOptionsCLCD@cursor cursor `uc  1 p 1 3 ]
+[v displayOptionsCLCD@blink blink `uc  1 p 1 4 ]
+[v displayOptionsCLCD@disp disp `uc  1 p 1 7 ]
+"72
+} 1
+"17
+[v _writeCLCD writeCLCD `(v  1 e 1 0 ]
+{
+[v writeCLCD@info info `uc  1 p 1 wreg ]
+[v writeCLCD@info info `uc  1 p 1 wreg ]
+[v writeCLCD@mode mode `uc  1 p 1 0 ]
+[v writeCLCD@info info `uc  1 p 1 2 ]
+"26
+} 1

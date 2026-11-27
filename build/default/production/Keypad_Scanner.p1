@@ -1,0 +1,660 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"200 D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 200: extern volatile unsigned char PORTB __attribute__((address(0x006)));
+[v _PORTB `Vuc ~T0 @X0 0 e@6 ]
+"1359
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 1359: extern volatile unsigned char TRISB __attribute__((address(0x086)));
+[v _TRISB `Vuc ~T0 @X0 0 e@134 ]
+"1483
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 1483: extern volatile unsigned char TRISD __attribute__((address(0x088)));
+[v _TRISD `Vuc ~T0 @X0 0 e@136 ]
+"324
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 324: extern volatile unsigned char PORTD __attribute__((address(0x008)));
+[v _PORTD `Vuc ~T0 @X0 0 e@8 ]
+[v F174 `(v ~T0 @X0 1 tf1`ul ]
+"20 D:\MPLABX\pic\include/builtins.h
+[v __delay `JF174 ~T0 @X0 0 e ]
+[p i __delay ]
+"38 D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 38: __asm("INDF equ 00h");
+[; <" INDF equ 00h ;# ">
+"45
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 45: __asm("TMR0 equ 01h");
+[; <" TMR0 equ 01h ;# ">
+"52
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 52: __asm("PCL equ 02h");
+[; <" PCL equ 02h ;# ">
+"59
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 59: __asm("STATUS equ 03h");
+[; <" STATUS equ 03h ;# ">
+"145
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 145: __asm("FSR equ 04h");
+[; <" FSR equ 04h ;# ">
+"152
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 152: __asm("PORTA equ 05h");
+[; <" PORTA equ 05h ;# ">
+"202
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 202: __asm("PORTB equ 06h");
+[; <" PORTB equ 06h ;# ">
+"264
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 264: __asm("PORTC equ 07h");
+[; <" PORTC equ 07h ;# ">
+"326
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 326: __asm("PORTD equ 08h");
+[; <" PORTD equ 08h ;# ">
+"388
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 388: __asm("PORTE equ 09h");
+[; <" PORTE equ 09h ;# ">
+"420
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 420: __asm("PCLATH equ 0Ah");
+[; <" PCLATH equ 0Ah ;# ">
+"440
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 440: __asm("INTCON equ 0Bh");
+[; <" INTCON equ 0Bh ;# ">
+"518
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 518: __asm("PIR1 equ 0Ch");
+[; <" PIR1 equ 0Ch ;# ">
+"580
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 580: __asm("PIR2 equ 0Dh");
+[; <" PIR2 equ 0Dh ;# ">
+"620
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 620: __asm("TMR1 equ 0Eh");
+[; <" TMR1 equ 0Eh ;# ">
+"627
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 627: __asm("TMR1L equ 0Eh");
+[; <" TMR1L equ 0Eh ;# ">
+"634
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 634: __asm("TMR1H equ 0Fh");
+[; <" TMR1H equ 0Fh ;# ">
+"641
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 641: __asm("T1CON equ 010h");
+[; <" T1CON equ 010h ;# ">
+"716
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 716: __asm("TMR2 equ 011h");
+[; <" TMR2 equ 011h ;# ">
+"723
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 723: __asm("T2CON equ 012h");
+[; <" T2CON equ 012h ;# ">
+"794
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 794: __asm("SSPBUF equ 013h");
+[; <" SSPBUF equ 013h ;# ">
+"801
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 801: __asm("SSPCON equ 014h");
+[; <" SSPCON equ 014h ;# ">
+"871
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 871: __asm("CCPR1 equ 015h");
+[; <" CCPR1 equ 015h ;# ">
+"878
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 878: __asm("CCPR1L equ 015h");
+[; <" CCPR1L equ 015h ;# ">
+"885
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 885: __asm("CCPR1H equ 016h");
+[; <" CCPR1H equ 016h ;# ">
+"892
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 892: __asm("CCP1CON equ 017h");
+[; <" CCP1CON equ 017h ;# ">
+"950
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 950: __asm("RCSTA equ 018h");
+[; <" RCSTA equ 018h ;# ">
+"1045
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 1045: __asm("TXREG equ 019h");
+[; <" TXREG equ 019h ;# ">
+"1052
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 1052: __asm("RCREG equ 01Ah");
+[; <" RCREG equ 01Ah ;# ">
+"1059
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 1059: __asm("CCPR2 equ 01Bh");
+[; <" CCPR2 equ 01Bh ;# ">
+"1066
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 1066: __asm("CCPR2L equ 01Bh");
+[; <" CCPR2L equ 01Bh ;# ">
+"1073
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 1073: __asm("CCPR2H equ 01Ch");
+[; <" CCPR2H equ 01Ch ;# ">
+"1080
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 1080: __asm("CCP2CON equ 01Dh");
+[; <" CCP2CON equ 01Dh ;# ">
+"1138
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 1138: __asm("ADRESH equ 01Eh");
+[; <" ADRESH equ 01Eh ;# ">
+"1145
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 1145: __asm("ADCON0 equ 01Fh");
+[; <" ADCON0 equ 01Fh ;# ">
+"1241
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 1241: __asm("OPTION_REG equ 081h");
+[; <" OPTION_REG equ 081h ;# ">
+"1311
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 1311: __asm("TRISA equ 085h");
+[; <" TRISA equ 085h ;# ">
+"1361
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 1361: __asm("TRISB equ 086h");
+[; <" TRISB equ 086h ;# ">
+"1423
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 1423: __asm("TRISC equ 087h");
+[; <" TRISC equ 087h ;# ">
+"1485
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 1485: __asm("TRISD equ 088h");
+[; <" TRISD equ 088h ;# ">
+"1547
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 1547: __asm("TRISE equ 089h");
+[; <" TRISE equ 089h ;# ">
+"1604
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 1604: __asm("PIE1 equ 08Ch");
+[; <" PIE1 equ 08Ch ;# ">
+"1666
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 1666: __asm("PIE2 equ 08Dh");
+[; <" PIE2 equ 08Dh ;# ">
+"1706
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 1706: __asm("PCON equ 08Eh");
+[; <" PCON equ 08Eh ;# ">
+"1740
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 1740: __asm("SSPCON2 equ 091h");
+[; <" SSPCON2 equ 091h ;# ">
+"1802
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 1802: __asm("PR2 equ 092h");
+[; <" PR2 equ 092h ;# ">
+"1809
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 1809: __asm("SSPADD equ 093h");
+[; <" SSPADD equ 093h ;# ">
+"1816
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 1816: __asm("SSPSTAT equ 094h");
+[; <" SSPSTAT equ 094h ;# ">
+"1985
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 1985: __asm("TXSTA equ 098h");
+[; <" TXSTA equ 098h ;# ">
+"2066
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 2066: __asm("SPBRG equ 099h");
+[; <" SPBRG equ 099h ;# ">
+"2073
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 2073: __asm("CMCON equ 09Ch");
+[; <" CMCON equ 09Ch ;# ">
+"2143
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 2143: __asm("CVRCON equ 09Dh");
+[; <" CVRCON equ 09Dh ;# ">
+"2208
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 2208: __asm("ADRESL equ 09Eh");
+[; <" ADRESL equ 09Eh ;# ">
+"2215
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 2215: __asm("ADCON1 equ 09Fh");
+[; <" ADCON1 equ 09Fh ;# ">
+"2274
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 2274: __asm("EEDATA equ 010Ch");
+[; <" EEDATA equ 010Ch ;# ">
+"2281
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 2281: __asm("EEADR equ 010Dh");
+[; <" EEADR equ 010Dh ;# ">
+"2288
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 2288: __asm("EEDATH equ 010Eh");
+[; <" EEDATH equ 010Eh ;# ">
+"2295
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 2295: __asm("EEADRH equ 010Fh");
+[; <" EEADRH equ 010Fh ;# ">
+"2302
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 2302: __asm("EECON1 equ 018Ch");
+[; <" EECON1 equ 018Ch ;# ">
+"2347
+[; ;D:/MPLABX/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f877a.h: 2347: __asm("EECON2 equ 018Dh");
+[; <" EECON2 equ 018Dh ;# ">
+"24 Keypad_Scanner.c
+[; ;Keypad_Scanner.c: 24: static uint16_t enabled_keys;
+[v _enabled_keys `us ~T0 @X0 1 s ]
+"25
+[; ;Keypad_Scanner.c: 25: static uint16_t keys_pressed;
+[v _keys_pressed `us ~T0 @X0 1 s ]
+"26
+[; ;Keypad_Scanner.c: 26: static uint16_t candidate_keys;
+[v _candidate_keys `us ~T0 @X0 1 s ]
+"27
+[; ;Keypad_Scanner.c: 27: static uint16_t stable_keys;
+[v _stable_keys `us ~T0 @X0 1 s ]
+"29
+[; ;Keypad_Scanner.c: 29: static uint8_t delay_ms;
+[v _delay_ms `uc ~T0 @X0 1 s ]
+"31
+[; ;Keypad_Scanner.c: 31: void keypad_keys_init(uint16_t sel_keys) {
+[v _keypad_keys_init `(v ~T0 @X0 1 ef1`us ]
+{
+[e :U _keypad_keys_init ]
+[v _sel_keys `us ~T0 @X0 1 r1 ]
+[f ]
+"32
+[; ;Keypad_Scanner.c: 32:     enabled_keys = sel_keys & 0x0FFF;
+[e = _enabled_keys -> & -> _sel_keys `ui -> -> 4095 `i `ui `us ]
+"33
+[; ;Keypad_Scanner.c: 33:     keys_pressed = 0;
+[e = _keys_pressed -> -> 0 `i `us ]
+"34
+[; ;Keypad_Scanner.c: 34:     candidate_keys = 0;
+[e = _candidate_keys -> -> 0 `i `us ]
+"35
+[; ;Keypad_Scanner.c: 35:     stable_keys = 0;
+[e = _stable_keys -> -> 0 `i `us ]
+"37
+[; ;Keypad_Scanner.c: 37:     return;
+[e $UE 99  ]
+"38
+[; ;Keypad_Scanner.c: 38: }
+[e :UE 99 ]
+}
+"40
+[; ;Keypad_Scanner.c: 40: void keypad_keys_deinit(void) {
+[v _keypad_keys_deinit `(v ~T0 @X0 1 ef ]
+{
+[e :U _keypad_keys_deinit ]
+[f ]
+"41
+[; ;Keypad_Scanner.c: 41:     enabled_keys = 0;
+[e = _enabled_keys -> -> 0 `i `us ]
+"42
+[; ;Keypad_Scanner.c: 42:     keys_pressed = 0;
+[e = _keys_pressed -> -> 0 `i `us ]
+"43
+[; ;Keypad_Scanner.c: 43:     candidate_keys = 0;
+[e = _candidate_keys -> -> 0 `i `us ]
+"44
+[; ;Keypad_Scanner.c: 44:     stable_keys = 0;
+[e = _stable_keys -> -> 0 `i `us ]
+"46
+[; ;Keypad_Scanner.c: 46:     return;
+[e $UE 100  ]
+"47
+[; ;Keypad_Scanner.c: 47: }
+[e :UE 100 ]
+}
+"49
+[; ;Keypad_Scanner.c: 49: static uint16_t scanKeys_raw(void) {
+[v _scanKeys_raw `(us ~T0 @X0 1 sf ]
+{
+[e :U _scanKeys_raw ]
+[f ]
+"50
+[; ;Keypad_Scanner.c: 50:     uint16_t keypad_keys = 0;
+[v _keypad_keys `us ~T0 @X0 1 a ]
+[e = _keypad_keys -> -> 0 `i `us ]
+"51
+[; ;Keypad_Scanner.c: 51:     uint8_t portb_status = PORTB;
+[v _portb_status `uc ~T0 @X0 1 a ]
+[e = _portb_status _PORTB ]
+"52
+[; ;Keypad_Scanner.c: 52:     uint8_t trisb_status = TRISB;
+[v _trisb_status `uc ~T0 @X0 1 a ]
+[e = _trisb_status _TRISB ]
+"53
+[; ;Keypad_Scanner.c: 53:     uint8_t trisd_status = TRISD;
+[v _trisd_status `uc ~T0 @X0 1 a ]
+[e = _trisd_status _TRISD ]
+"55
+[; ;Keypad_Scanner.c: 55:     PORTB |= 0x07;
+[e =| _PORTB -> -> 7 `i `Vuc ]
+"56
+[; ;Keypad_Scanner.c: 56:     TRISB |= 0x07;
+[e =| _TRISB -> -> 7 `i `Vuc ]
+"58
+[; ;Keypad_Scanner.c: 58:     PORTD |= 0x0F;
+[e =| _PORTD -> -> 15 `i `Vuc ]
+"59
+[; ;Keypad_Scanner.c: 59:     TRISD &= (uint8_t)(~0x0F);
+[e =& _TRISD -> -> ~ -> 15 `i `uc `Vuc ]
+"61
+[; ;Keypad_Scanner.c: 61:     for (uint8_t rank = 0U; rank < 4; rank++) {
+{
+[v _rank `uc ~T0 @X0 1 a ]
+[e = _rank -> -> 0 `ui `uc ]
+[e $ < -> _rank `i -> 4 `i 102  ]
+[e $U 103  ]
+[e :U 102 ]
+{
+"62
+[; ;Keypad_Scanner.c: 62:         uint8_t row_mask = (uint8_t)(0x01 << (4 - rank - 1U));
+[v _row_mask `uc ~T0 @X0 1 a ]
+[e = _row_mask -> << -> 1 `i - -> - -> 4 `i -> _rank `i `ui -> 1 `ui `uc ]
+"64
+[; ;Keypad_Scanner.c: 64:         PORTD |= 0x0F;
+[e =| _PORTD -> -> 15 `i `Vuc ]
+"65
+[; ;Keypad_Scanner.c: 65:         PORTD &= (uint8_t)(~row_mask);
+[e =& _PORTD -> -> ~ -> _row_mask `i `uc `Vuc ]
+"67
+[; ;Keypad_Scanner.c: 67:         _delay((unsigned long)((25)*(20000000UL/4000000.0)));
+[e ( __delay (1 -> * -> -> 25 `i `d / -> -> 20000000 `ul `d .4000000.0 `ul ]
+"69
+[; ;Keypad_Scanner.c: 69:         for (uint8_t file = 0U; file < 3; file++) {
+{
+[v _file `uc ~T0 @X0 1 a ]
+[e = _file -> -> 0 `ui `uc ]
+[e $ < -> _file `i -> 3 `i 105  ]
+[e $U 106  ]
+[e :U 105 ]
+{
+"70
+[; ;Keypad_Scanner.c: 70:             if ((PORTB & (0x01 << file)) == 0) {
+[e $ ! == & -> _PORTB `i << -> 1 `i -> _file `i -> 0 `i 108  ]
+{
+"71
+[; ;Keypad_Scanner.c: 71:                 keypad_keys |= (uint16_t)(0x0001 << (rank * 3 + file));
+[e =| _keypad_keys -> -> << -> 1 `i + * -> _rank `i -> 3 `i -> _file `i `us `us ]
+"72
+[; ;Keypad_Scanner.c: 72:             }
+}
+[e :U 108 ]
+"73
+[; ;Keypad_Scanner.c: 73:         }
+}
+[e ++ _file -> -> 1 `i `uc ]
+[e $ < -> _file `i -> 3 `i 105  ]
+[e :U 106 ]
+}
+"74
+[; ;Keypad_Scanner.c: 74:     }
+}
+[e ++ _rank -> -> 1 `i `uc ]
+[e $ < -> _rank `i -> 4 `i 102  ]
+[e :U 103 ]
+}
+"76
+[; ;Keypad_Scanner.c: 76:     PORTD |= 0x0F;
+[e =| _PORTD -> -> 15 `i `Vuc ]
+"77
+[; ;Keypad_Scanner.c: 77:     TRISD = (uint8_t)((TRISD & (uint8_t)(~0x0F)) | (trisd_status & 0x0F));
+[e = _TRISD -> | & -> _TRISD `i -> -> ~ -> 15 `i `uc `i & -> _trisd_status `i -> 15 `i `uc ]
+"78
+[; ;Keypad_Scanner.c: 78:     PORTB = portb_status;
+[e = _PORTB _portb_status ]
+"79
+[; ;Keypad_Scanner.c: 79:     TRISB = trisb_status;
+[e = _TRISB _trisb_status ]
+"81
+[; ;Keypad_Scanner.c: 81:     return keypad_keys;
+[e ) _keypad_keys ]
+[e $UE 101  ]
+"82
+[; ;Keypad_Scanner.c: 82: }
+[e :UE 101 ]
+}
+"97
+[; ;Keypad_Scanner.c: 97: static uint16_t debounceKeys(uint32_t currTick, uint32_t totTick)
+[v _debounceKeys `(us ~T0 @X0 1 sf2`ul`ul ]
+"98
+[; ;Keypad_Scanner.c: 98: {
+{
+[e :U _debounceKeys ]
+"97
+[; ;Keypad_Scanner.c: 97: static uint16_t debounceKeys(uint32_t currTick, uint32_t totTick)
+[v _currTick `ul ~T0 @X0 1 r1 ]
+[v _totTick `ul ~T0 @X0 1 r2 ]
+"98
+[; ;Keypad_Scanner.c: 98: {
+[f ]
+"99
+[; ;Keypad_Scanner.c: 99:     static uint8_t debounce_active;
+[v F1045 `uc ~T0 @X0 1 s debounce_active ]
+"100
+[; ;Keypad_Scanner.c: 100:     static uint32_t startTick;
+[v F1046 `ul ~T0 @X0 1 s startTick ]
+"102
+[; ;Keypad_Scanner.c: 102:     uint16_t raw_keys = scanKeys_raw();
+[v _raw_keys `us ~T0 @X0 1 a ]
+[e = _raw_keys ( _scanKeys_raw ..  ]
+"104
+[; ;Keypad_Scanner.c: 104:     if ((currTick == 0UL) && (totTick == 0UL)) {
+[e $ ! && == _currTick -> 0 `ul == _totTick -> 0 `ul 110  ]
+{
+"105
+[; ;Keypad_Scanner.c: 105:         if (raw_keys != stable_keys) {
+[e $ ! != -> _raw_keys `ui -> _stable_keys `ui 111  ]
+{
+"106
+[; ;Keypad_Scanner.c: 106:             for(uint8_t iter = 0; iter < delay_ms; iter++) {
+{
+[v _iter `uc ~T0 @X0 1 a ]
+[e = _iter -> -> 0 `i `uc ]
+[e $U 115  ]
+[e :U 112 ]
+{
+"107
+[; ;Keypad_Scanner.c: 107:                 __asm("clrwdt");
+[; <" clrwdt ;# ">
+"108
+[; ;Keypad_Scanner.c: 108:                 _delay((unsigned long)((1U)*(20000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 1 `ui `d / -> -> 20000000 `ul `d .4000.0 `ul ]
+"109
+[; ;Keypad_Scanner.c: 109:             }
+}
+[e ++ _iter -> -> 1 `i `uc ]
+[e :U 115 ]
+[e $ < -> _iter `i -> _delay_ms `i 112  ]
+[e :U 113 ]
+}
+"111
+[; ;Keypad_Scanner.c: 111:             raw_keys &= scanKeys_raw();
+[e =& _raw_keys -> ( _scanKeys_raw ..  `us ]
+"113
+[; ;Keypad_Scanner.c: 113:             candidate_keys = raw_keys;
+[e = _candidate_keys _raw_keys ]
+"114
+[; ;Keypad_Scanner.c: 114:             stable_keys = raw_keys;
+[e = _stable_keys _raw_keys ]
+"115
+[; ;Keypad_Scanner.c: 115:         }
+}
+[e :U 111 ]
+"117
+[; ;Keypad_Scanner.c: 117:         debounce_active = 0;
+[e = F1045 -> -> 0 `i `uc ]
+"118
+[; ;Keypad_Scanner.c: 118:         startTick = 0UL;
+[e = F1046 -> 0 `ul ]
+"120
+[; ;Keypad_Scanner.c: 120:         return stable_keys;
+[e ) _stable_keys ]
+[e $UE 109  ]
+"121
+[; ;Keypad_Scanner.c: 121:     }
+}
+[e :U 110 ]
+"123
+[; ;Keypad_Scanner.c: 123:     if (raw_keys != candidate_keys) {
+[e $ ! != -> _raw_keys `ui -> _candidate_keys `ui 116  ]
+{
+"124
+[; ;Keypad_Scanner.c: 124:         candidate_keys = raw_keys;
+[e = _candidate_keys _raw_keys ]
+"125
+[; ;Keypad_Scanner.c: 125:         startTick = currTick;
+[e = F1046 _currTick ]
+"126
+[; ;Keypad_Scanner.c: 126:         debounce_active = 1;
+[e = F1045 -> -> 1 `i `uc ]
+"128
+[; ;Keypad_Scanner.c: 128:         return stable_keys;
+[e ) _stable_keys ]
+[e $UE 109  ]
+"129
+[; ;Keypad_Scanner.c: 129:     }
+}
+[e :U 116 ]
+"131
+[; ;Keypad_Scanner.c: 131:     if (debounce_active != 0) {
+[e $ ! != -> F1045 `i -> 0 `i 117  ]
+{
+"132
+[; ;Keypad_Scanner.c: 132:         if ((currTick - startTick) >= totTick) {
+[e $ ! >= - _currTick F1046 _totTick 118  ]
+{
+"133
+[; ;Keypad_Scanner.c: 133:             stable_keys = candidate_keys;
+[e = _stable_keys _candidate_keys ]
+"134
+[; ;Keypad_Scanner.c: 134:             debounce_active = 0;
+[e = F1045 -> -> 0 `i `uc ]
+"135
+[; ;Keypad_Scanner.c: 135:         }
+}
+[e :U 118 ]
+"136
+[; ;Keypad_Scanner.c: 136:     }
+}
+[e :U 117 ]
+"138
+[; ;Keypad_Scanner.c: 138:     return stable_keys;
+[e ) _stable_keys ]
+[e $UE 109  ]
+"139
+[; ;Keypad_Scanner.c: 139: }
+[e :UE 109 ]
+}
+"155
+[; ;Keypad_Scanner.c: 155: static uint16_t scanKeys_edge(uint32_t curr, uint32_t tot) {
+[v _scanKeys_edge `(us ~T0 @X0 1 sf2`ul`ul ]
+{
+[e :U _scanKeys_edge ]
+[v _curr `ul ~T0 @X0 1 r1 ]
+[v _tot `ul ~T0 @X0 1 r2 ]
+[f ]
+"156
+[; ;Keypad_Scanner.c: 156:     uint16_t keys = debounceKeys(curr, tot) & enabled_keys;
+[v _keys `us ~T0 @X0 1 a ]
+[e = _keys -> & -> ( _debounceKeys (2 , _curr _tot `ui -> _enabled_keys `ui `us ]
+"157
+[; ;Keypad_Scanner.c: 157:     uint16_t out_val = keys & (uint16_t)(~keys_pressed);
+[v _out_val `us ~T0 @X0 1 a ]
+[e = _out_val -> & -> _keys `ui -> -> ~ -> _keys_pressed `ui `us `ui `us ]
+"159
+[; ;Keypad_Scanner.c: 159:     keys_pressed = keys;
+[e = _keys_pressed _keys ]
+"161
+[; ;Keypad_Scanner.c: 161:     return out_val;
+[e ) _out_val ]
+[e $UE 119  ]
+"162
+[; ;Keypad_Scanner.c: 162: }
+[e :UE 119 ]
+}
+"164
+[; ;Keypad_Scanner.c: 164: static uint16_t scanKeys_level(uint32_t curr, uint32_t tot) {
+[v _scanKeys_level `(us ~T0 @X0 1 sf2`ul`ul ]
+{
+[e :U _scanKeys_level ]
+[v _curr `ul ~T0 @X0 1 r1 ]
+[v _tot `ul ~T0 @X0 1 r2 ]
+[f ]
+"165
+[; ;Keypad_Scanner.c: 165:     return debounceKeys(curr, tot) & enabled_keys;
+[e ) -> & -> ( _debounceKeys (2 , _curr _tot `ui -> _enabled_keys `ui `us ]
+[e $UE 120  ]
+"166
+[; ;Keypad_Scanner.c: 166: }
+[e :UE 120 ]
+}
+"168
+[; ;Keypad_Scanner.c: 168: uint16_t scanKeys_keypad_block(uint8_t scanType, uint8_t block_delay_ms) {
+[v _scanKeys_keypad_block `(us ~T0 @X0 1 ef2`uc`uc ]
+{
+[e :U _scanKeys_keypad_block ]
+[v _scanType `uc ~T0 @X0 1 r1 ]
+[v _block_delay_ms `uc ~T0 @X0 1 r2 ]
+[f ]
+"169
+[; ;Keypad_Scanner.c: 169:     uint16_t keypad_keys;
+[v _keypad_keys `us ~T0 @X0 1 a ]
+"170
+[; ;Keypad_Scanner.c: 170:     delay_ms = block_delay_ms;
+[e = _delay_ms _block_delay_ms ]
+"172
+[; ;Keypad_Scanner.c: 172:     if (scanType == 0) {
+[e $ ! == -> _scanType `i -> 0 `i 122  ]
+{
+"173
+[; ;Keypad_Scanner.c: 173:         keypad_keys = scanKeys_edge(0x00000000, 0x00000000);
+[e = _keypad_keys ( _scanKeys_edge (2 , -> -> -> 0 `i `l `ul -> -> -> 0 `i `l `ul ]
+"174
+[; ;Keypad_Scanner.c: 174:     }
+}
+[e $U 123  ]
+"175
+[; ;Keypad_Scanner.c: 175:     else if (scanType == 1) {
+[e :U 122 ]
+[e $ ! == -> _scanType `i -> 1 `i 124  ]
+{
+"176
+[; ;Keypad_Scanner.c: 176:         keypad_keys = scanKeys_level(0x00000000, 0x00000000);
+[e = _keypad_keys ( _scanKeys_level (2 , -> -> -> 0 `i `l `ul -> -> -> 0 `i `l `ul ]
+"177
+[; ;Keypad_Scanner.c: 177:     }
+}
+[e $U 125  ]
+"178
+[; ;Keypad_Scanner.c: 178:     else {
+[e :U 124 ]
+{
+"179
+[; ;Keypad_Scanner.c: 179:         keypad_keys = 0;
+[e = _keypad_keys -> -> 0 `i `us ]
+"180
+[; ;Keypad_Scanner.c: 180:     }
+}
+[e :U 125 ]
+[e :U 123 ]
+"182
+[; ;Keypad_Scanner.c: 182:     return keypad_keys;
+[e ) _keypad_keys ]
+[e $UE 121  ]
+"183
+[; ;Keypad_Scanner.c: 183: }
+[e :UE 121 ]
+}
+"185
+[; ;Keypad_Scanner.c: 185: uint16_t scanKeys_keypad_nonblock(uint8_t scanType, uint32_t currTick, uint32_t totTicks) {
+[v _scanKeys_keypad_nonblock `(us ~T0 @X0 1 ef3`uc`ul`ul ]
+{
+[e :U _scanKeys_keypad_nonblock ]
+[v _scanType `uc ~T0 @X0 1 r1 ]
+[v _currTick `ul ~T0 @X0 1 r2 ]
+[v _totTicks `ul ~T0 @X0 1 r3 ]
+[f ]
+"186
+[; ;Keypad_Scanner.c: 186:     uint16_t keypad_keys;
+[v _keypad_keys `us ~T0 @X0 1 a ]
+"188
+[; ;Keypad_Scanner.c: 188:     if (scanType == 0) {
+[e $ ! == -> _scanType `i -> 0 `i 127  ]
+{
+"189
+[; ;Keypad_Scanner.c: 189:         keypad_keys = scanKeys_edge(currTick, totTicks);
+[e = _keypad_keys ( _scanKeys_edge (2 , _currTick _totTicks ]
+"190
+[; ;Keypad_Scanner.c: 190:     }
+}
+[e $U 128  ]
+"191
+[; ;Keypad_Scanner.c: 191:     else if (scanType == 1) {
+[e :U 127 ]
+[e $ ! == -> _scanType `i -> 1 `i 129  ]
+{
+"192
+[; ;Keypad_Scanner.c: 192:         keypad_keys = scanKeys_level(currTick, totTicks);
+[e = _keypad_keys ( _scanKeys_level (2 , _currTick _totTicks ]
+"193
+[; ;Keypad_Scanner.c: 193:     }
+}
+[e $U 130  ]
+"194
+[; ;Keypad_Scanner.c: 194:     else {
+[e :U 129 ]
+{
+"195
+[; ;Keypad_Scanner.c: 195:         keypad_keys = 0;
+[e = _keypad_keys -> -> 0 `i `us ]
+"196
+[; ;Keypad_Scanner.c: 196:     }
+}
+[e :U 130 ]
+[e :U 128 ]
+"198
+[; ;Keypad_Scanner.c: 198:     return keypad_keys;
+[e ) _keypad_keys ]
+[e $UE 126  ]
+"199
+[; ;Keypad_Scanner.c: 199: }
+[e :UE 126 ]
+}

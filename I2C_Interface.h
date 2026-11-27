@@ -18,6 +18,9 @@
 #define I2C_ERROR 1U
 #define I2C_TIMEOUT 2U
 
+#define I2C_STANDARD_MODE 100000UL
+#define I2C_FAST_MODE 400000UL
+
 #ifdef	__cplusplus
 extern "C" {
 #endif

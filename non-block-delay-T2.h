@@ -21,15 +21,12 @@
 extern "C" {
 #endif
     
-    uint32_t getDurationTick(uint32_t delay_time_us, uint32_t Fosc);
     void nonBlockDelayT2_init(uint8_t load_pr2, uint8_t activate_scaler, uint8_t prescaler, uint8_t postscaler);
     uint8_t timerT2_expired(uint32_t durationTick, uint32_t startTick);
     void TMR2_ISR(void);
-    uint32_t getSysTick(void);
     void nonBlockDelayT2_deinit(void);
     
     void nonBlockDelayT2_init_rapid(uint8_t load_pr2, uint8_t activate_scaler, uint8_t prescaler, uint8_t postscaler, uint32_t delay_time_us, uint32_t Fosc);
-    void startDelay_rapid(void);
     uint8_t TMR2_ISR_rapid_1shot(void);
     uint8_t TMR2_ISR_rapid_periodic(void);
     void nonBlockDelayT2_deinit_rapid(void);

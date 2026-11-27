@@ -28,10 +28,6 @@ extern "C" {
     uint8_t TMR0_ISR_rapid_periodic(void);
     void nonBlockDelayT0_deinit_rapid(void);
     
-    uint32_t getSysTick(void);
-    void startDelay_rapid(void);
-    uint32_t getDurationTick(uint32_t delay_time_us, uint32_t Fosc);
-    
     uint32_t getSysTick_TM0(void);
     void startDelay_rapid_TM0(void);
     uint32_t getDurationTick_TM0(uint32_t delay_time_us, uint32_t Fosc);

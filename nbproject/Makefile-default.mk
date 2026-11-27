@@ -51,17 +51,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=Main.c ADC_Interface.c CLCD_Interface.c I2c_Interface.c Keypad_Scanner.c non-block-delay-T0-compat.c non-block-delay-T0.c non-block-delay-T2-compat.c non-block-delay-T2.c
+SOURCEFILES_QUOTED_IF_SPACED=Main.c ADC_Interface.c CLCD_Interface.c I2c_Interface.c Keypad_Scanner.c non-block-delay-T0.c non-block-delay-T2.c ext_eeprom_interface.c rtc_interface.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/Main.p1 ${OBJECTDIR}/ADC_Interface.p1 ${OBJECTDIR}/CLCD_Interface.p1 ${OBJECTDIR}/I2c_Interface.p1 ${OBJECTDIR}/Keypad_Scanner.p1 ${OBJECTDIR}/non-block-delay-T0-compat.p1 ${OBJECTDIR}/non-block-delay-T0.p1 ${OBJECTDIR}/non-block-delay-T2-compat.p1 ${OBJECTDIR}/non-block-delay-T2.p1
-POSSIBLE_DEPFILES=${OBJECTDIR}/Main.p1.d ${OBJECTDIR}/ADC_Interface.p1.d ${OBJECTDIR}/CLCD_Interface.p1.d ${OBJECTDIR}/I2c_Interface.p1.d ${OBJECTDIR}/Keypad_Scanner.p1.d ${OBJECTDIR}/non-block-delay-T0-compat.p1.d ${OBJECTDIR}/non-block-delay-T0.p1.d ${OBJECTDIR}/non-block-delay-T2-compat.p1.d ${OBJECTDIR}/non-block-delay-T2.p1.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/Main.p1 ${OBJECTDIR}/ADC_Interface.p1 ${OBJECTDIR}/CLCD_Interface.p1 ${OBJECTDIR}/I2c_Interface.p1 ${OBJECTDIR}/Keypad_Scanner.p1 ${OBJECTDIR}/non-block-delay-T0.p1 ${OBJECTDIR}/non-block-delay-T2.p1 ${OBJECTDIR}/ext_eeprom_interface.p1 ${OBJECTDIR}/rtc_interface.p1
+POSSIBLE_DEPFILES=${OBJECTDIR}/Main.p1.d ${OBJECTDIR}/ADC_Interface.p1.d ${OBJECTDIR}/CLCD_Interface.p1.d ${OBJECTDIR}/I2c_Interface.p1.d ${OBJECTDIR}/Keypad_Scanner.p1.d ${OBJECTDIR}/non-block-delay-T0.p1.d ${OBJECTDIR}/non-block-delay-T2.p1.d ${OBJECTDIR}/ext_eeprom_interface.p1.d ${OBJECTDIR}/rtc_interface.p1.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/Main.p1 ${OBJECTDIR}/ADC_Interface.p1 ${OBJECTDIR}/CLCD_Interface.p1 ${OBJECTDIR}/I2c_Interface.p1 ${OBJECTDIR}/Keypad_Scanner.p1 ${OBJECTDIR}/non-block-delay-T0-compat.p1 ${OBJECTDIR}/non-block-delay-T0.p1 ${OBJECTDIR}/non-block-delay-T2-compat.p1 ${OBJECTDIR}/non-block-delay-T2.p1
+OBJECTFILES=${OBJECTDIR}/Main.p1 ${OBJECTDIR}/ADC_Interface.p1 ${OBJECTDIR}/CLCD_Interface.p1 ${OBJECTDIR}/I2c_Interface.p1 ${OBJECTDIR}/Keypad_Scanner.p1 ${OBJECTDIR}/non-block-delay-T0.p1 ${OBJECTDIR}/non-block-delay-T2.p1 ${OBJECTDIR}/ext_eeprom_interface.p1 ${OBJECTDIR}/rtc_interface.p1
 
 # Source Files
-SOURCEFILES=Main.c ADC_Interface.c CLCD_Interface.c I2c_Interface.c Keypad_Scanner.c non-block-delay-T0-compat.c non-block-delay-T0.c non-block-delay-T2-compat.c non-block-delay-T2.c
+SOURCEFILES=Main.c ADC_Interface.c CLCD_Interface.c I2c_Interface.c Keypad_Scanner.c non-block-delay-T0.c non-block-delay-T2.c ext_eeprom_interface.c rtc_interface.c
 
 
 
@@ -128,14 +128,6 @@ ${OBJECTDIR}/Keypad_Scanner.p1: Keypad_Scanner.c  nbproject/Makefile-${CND_CONF}
 	@-${MV} ${OBJECTDIR}/Keypad_Scanner.d ${OBJECTDIR}/Keypad_Scanner.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/Keypad_Scanner.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
-${OBJECTDIR}/non-block-delay-T0-compat.p1: non-block-delay-T0-compat.c  nbproject/Makefile-${CND_CONF}.mk 
-	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/non-block-delay-T0-compat.p1.d 
-	@${RM} ${OBJECTDIR}/non-block-delay-T0-compat.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1  -mdebugger=none   -mdfp="${DFP_DIR}/xc8"  -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/non-block-delay-T0-compat.p1 non-block-delay-T0-compat.c 
-	@-${MV} ${OBJECTDIR}/non-block-delay-T0-compat.d ${OBJECTDIR}/non-block-delay-T0-compat.p1.d 
-	@${FIXDEPS} ${OBJECTDIR}/non-block-delay-T0-compat.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
-	
 ${OBJECTDIR}/non-block-delay-T0.p1: non-block-delay-T0.c  nbproject/Makefile-${CND_CONF}.mk 
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/non-block-delay-T0.p1.d 
@@ -144,14 +136,6 @@ ${OBJECTDIR}/non-block-delay-T0.p1: non-block-delay-T0.c  nbproject/Makefile-${C
 	@-${MV} ${OBJECTDIR}/non-block-delay-T0.d ${OBJECTDIR}/non-block-delay-T0.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/non-block-delay-T0.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
-${OBJECTDIR}/non-block-delay-T2-compat.p1: non-block-delay-T2-compat.c  nbproject/Makefile-${CND_CONF}.mk 
-	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/non-block-delay-T2-compat.p1.d 
-	@${RM} ${OBJECTDIR}/non-block-delay-T2-compat.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1  -mdebugger=none   -mdfp="${DFP_DIR}/xc8"  -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/non-block-delay-T2-compat.p1 non-block-delay-T2-compat.c 
-	@-${MV} ${OBJECTDIR}/non-block-delay-T2-compat.d ${OBJECTDIR}/non-block-delay-T2-compat.p1.d 
-	@${FIXDEPS} ${OBJECTDIR}/non-block-delay-T2-compat.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
-	
 ${OBJECTDIR}/non-block-delay-T2.p1: non-block-delay-T2.c  nbproject/Makefile-${CND_CONF}.mk 
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/non-block-delay-T2.p1.d 
@@ -159,6 +143,22 @@ ${OBJECTDIR}/non-block-delay-T2.p1: non-block-delay-T2.c  nbproject/Makefile-${C
 	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1  -mdebugger=none   -mdfp="${DFP_DIR}/xc8"  -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/non-block-delay-T2.p1 non-block-delay-T2.c 
 	@-${MV} ${OBJECTDIR}/non-block-delay-T2.d ${OBJECTDIR}/non-block-delay-T2.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/non-block-delay-T2.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+	
+${OBJECTDIR}/ext_eeprom_interface.p1: ext_eeprom_interface.c  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/ext_eeprom_interface.p1.d 
+	@${RM} ${OBJECTDIR}/ext_eeprom_interface.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1  -mdebugger=none   -mdfp="${DFP_DIR}/xc8"  -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/ext_eeprom_interface.p1 ext_eeprom_interface.c 
+	@-${MV} ${OBJECTDIR}/ext_eeprom_interface.d ${OBJECTDIR}/ext_eeprom_interface.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/ext_eeprom_interface.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+	
+${OBJECTDIR}/rtc_interface.p1: rtc_interface.c  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/rtc_interface.p1.d 
+	@${RM} ${OBJECTDIR}/rtc_interface.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1  -mdebugger=none   -mdfp="${DFP_DIR}/xc8"  -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/rtc_interface.p1 rtc_interface.c 
+	@-${MV} ${OBJECTDIR}/rtc_interface.d ${OBJECTDIR}/rtc_interface.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/rtc_interface.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
 else
 ${OBJECTDIR}/Main.p1: Main.c  nbproject/Makefile-${CND_CONF}.mk 
@@ -201,14 +201,6 @@ ${OBJECTDIR}/Keypad_Scanner.p1: Keypad_Scanner.c  nbproject/Makefile-${CND_CONF}
 	@-${MV} ${OBJECTDIR}/Keypad_Scanner.d ${OBJECTDIR}/Keypad_Scanner.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/Keypad_Scanner.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
-${OBJECTDIR}/non-block-delay-T0-compat.p1: non-block-delay-T0-compat.c  nbproject/Makefile-${CND_CONF}.mk 
-	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/non-block-delay-T0-compat.p1.d 
-	@${RM} ${OBJECTDIR}/non-block-delay-T0-compat.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp="${DFP_DIR}/xc8"  -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/non-block-delay-T0-compat.p1 non-block-delay-T0-compat.c 
-	@-${MV} ${OBJECTDIR}/non-block-delay-T0-compat.d ${OBJECTDIR}/non-block-delay-T0-compat.p1.d 
-	@${FIXDEPS} ${OBJECTDIR}/non-block-delay-T0-compat.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
-	
 ${OBJECTDIR}/non-block-delay-T0.p1: non-block-delay-T0.c  nbproject/Makefile-${CND_CONF}.mk 
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/non-block-delay-T0.p1.d 
@@ -217,14 +209,6 @@ ${OBJECTDIR}/non-block-delay-T0.p1: non-block-delay-T0.c  nbproject/Makefile-${C
 	@-${MV} ${OBJECTDIR}/non-block-delay-T0.d ${OBJECTDIR}/non-block-delay-T0.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/non-block-delay-T0.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
-${OBJECTDIR}/non-block-delay-T2-compat.p1: non-block-delay-T2-compat.c  nbproject/Makefile-${CND_CONF}.mk 
-	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/non-block-delay-T2-compat.p1.d 
-	@${RM} ${OBJECTDIR}/non-block-delay-T2-compat.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp="${DFP_DIR}/xc8"  -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/non-block-delay-T2-compat.p1 non-block-delay-T2-compat.c 
-	@-${MV} ${OBJECTDIR}/non-block-delay-T2-compat.d ${OBJECTDIR}/non-block-delay-T2-compat.p1.d 
-	@${FIXDEPS} ${OBJECTDIR}/non-block-delay-T2-compat.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
-	
 ${OBJECTDIR}/non-block-delay-T2.p1: non-block-delay-T2.c  nbproject/Makefile-${CND_CONF}.mk 
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/non-block-delay-T2.p1.d 
@@ -232,6 +216,22 @@ ${OBJECTDIR}/non-block-delay-T2.p1: non-block-delay-T2.c  nbproject/Makefile-${C
 	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp="${DFP_DIR}/xc8"  -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/non-block-delay-T2.p1 non-block-delay-T2.c 
 	@-${MV} ${OBJECTDIR}/non-block-delay-T2.d ${OBJECTDIR}/non-block-delay-T2.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/non-block-delay-T2.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+	
+${OBJECTDIR}/ext_eeprom_interface.p1: ext_eeprom_interface.c  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/ext_eeprom_interface.p1.d 
+	@${RM} ${OBJECTDIR}/ext_eeprom_interface.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp="${DFP_DIR}/xc8"  -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/ext_eeprom_interface.p1 ext_eeprom_interface.c 
+	@-${MV} ${OBJECTDIR}/ext_eeprom_interface.d ${OBJECTDIR}/ext_eeprom_interface.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/ext_eeprom_interface.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+	
+${OBJECTDIR}/rtc_interface.p1: rtc_interface.c  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/rtc_interface.p1.d 
+	@${RM} ${OBJECTDIR}/rtc_interface.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp="${DFP_DIR}/xc8"  -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/rtc_interface.p1 rtc_interface.c 
+	@-${MV} ${OBJECTDIR}/rtc_interface.d ${OBJECTDIR}/rtc_interface.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/rtc_interface.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
 endif
 
